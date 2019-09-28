@@ -14,20 +14,31 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: tailor | your | BIM
+header: ./assets/img/logotyb.png
 email: info@tailoryourbim.com
+author: Ching
 description: >- # this means to ignore newlines until "baseurl:"
-  Got wishes for an improved BIM environment?
-  You do what you do best, and let us tailor your BIM!
+  Got wishes for an improved BIM workflow and environment?
+  Make all your efforts for planing projects, let us tailor your BIM to meet your needs.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://tailoryourbim.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tailoryourbim
 github_username: tailoryourbim
+
+permalink: /:categories/:title/
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: "assets/img/"
+    values:
+      image: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
