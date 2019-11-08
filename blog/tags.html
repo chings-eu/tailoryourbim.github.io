@@ -4,7 +4,7 @@ title: Tags
 permalink: /tags/
 ---
 
-<!-- rawtags: "tag1|tag2|tag3" -->
+<!-- rawtags: "tag1|tag2|tag3" 
 {% comment %}
 Extracting all tags from posts, 
 and put them here
@@ -16,9 +16,9 @@ and put them here
     {% assign rawtags = rawtags | append: ttags %}
 {% endfor %}
 
-{% assign rawtags = rawtags | split: '|' | sort %}
+{% assign rawtags = rawtags | split: '|' | sort %}-->
 
-<!-- remove duplicates -->
+<!-- remove duplicates 
 {% comment %}
 remove duplicated Tags
 {% endcomment %}
@@ -33,4 +33,23 @@ remove duplicated Tags
             {% assign tags = tags | join: '|' | append: '|' | append: tag | split: '|' %}
         {% endunless %}
     {% endif %}
-{% endfor %}
+{% endfor %}-->
+
+<div id="archives">
+    {%- for tag in site.tags -%}
+    <div class="archive-group">
+        {%- capture tag_name -%} {{tag | first}} {%- endcapture -%}
+        <div id="#{{ category_name | slugize}}"></div>
+        <p></p>
+        <h3 class="category-head">{{ tag_name }}</h3>
+        <a name="{{ category_name | slugize}}"></a>
+        {%- for post in site.tags[tag_name] -%}
+        <article class="archive-item">
+            <h4><a herf="{{ site.baseurl }}{{ post.url }}">
+                {{ post.title}}
+            </a></h4>
+        </article>
+        {%- endfor -%}
+    </div>
+    {%- endfor -%}
+</div>
