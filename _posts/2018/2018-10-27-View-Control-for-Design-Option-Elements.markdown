@@ -2,8 +2,8 @@
 layout: post
 title: "View Control for Design Option Elements | 圖形取代設計選項中的物件顏色"
 date: 2018-10-27-160742 
-categories: 
-tags: 
+categories: RevitExternalCommand
+tags: [f#, revit api, view, design option, override graphic settings]
 published: true
 ---
 In this blog entry, let’s talk about how to handle the display of elements in views for example, giving different color to elements from the other similar elements. Here, I’ll demonstrate with an example: assigning distinctive colors to elements according to their different design options. 

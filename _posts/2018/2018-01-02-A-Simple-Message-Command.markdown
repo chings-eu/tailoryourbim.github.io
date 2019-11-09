@@ -3,7 +3,7 @@ layout: post
 title: "A Simple Message Command | 簡單的訊息指令"
 date: 2018-01-02-223053 
 categories: RevitExternalCommand
-tags: [f#, revit api]
+tags: [f#, revit api, message]
 published: true
 ---
 

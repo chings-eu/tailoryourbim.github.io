@@ -3,7 +3,7 @@ layout: post
 title: "Start Up an F# Solution for Revit Plug-In | 在 Visual Studio 中用 F# 編程 Revit 外部指令"
 date: 2018-03-11-225312 
 categories: RevitExternalCommand
-tags: [f#, revit api]
+tags: [f#, revit api, set up, solution]
 published: true
 ---
 Setting up a convenient coding environment is the first step towards efficiency. By using Microsoft Visual Studio, we can easily set up a solution with project(s).

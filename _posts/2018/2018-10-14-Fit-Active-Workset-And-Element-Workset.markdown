@@ -2,8 +2,8 @@
 layout: post
 title: "Fit Active Workset And Element Workset"
 date: 2018-10-14-080251 
-categories: 
-tags: 
+categories: RevitExternalCommand
+tags: [f#, revit api, workset]
 published: true
 ---
 It has been said that using Worksets in Revit is like using layers, analog to AutoCAD or Rhino. Apart from that, working with a work-shared model and manipulating the worksets, either quickly switching / activating between worksets or assigning elements to worksets, can simply improve our working efficiency – at least the additional possibility to change the visibility of each workset in views is already an improvement.

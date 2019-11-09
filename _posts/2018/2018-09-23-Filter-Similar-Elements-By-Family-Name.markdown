@@ -3,7 +3,7 @@ layout: post
 title: "Filter Similar Elements By Family Name"
 date: 2018-09-23-054834 
 categories: RevitExternalCommand
-tags: [f#, revit api]
+tags: [f#, revit api, filter, similar, family, element]
 published: true
 ---
 A basic and common way to optimize the efficiency is by giving shortcuts to our most frequently used commands. By combining different shortcuts, i.e. commands, we create drawing processes, and by doing which repeatedly we save the time we wasted by moving mouse cursor and selecting between panels and buttons, repeatedly.

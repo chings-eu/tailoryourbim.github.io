@@ -2,8 +2,8 @@
 layout: post
 title: "Compiling Python Code as External Command | 裝載 Python 編碼成 Revit 外部程式"
 date: 2018-11-10-161733 
-categories: 
-tags: 
+categories: RevitExternalCommand
+tags: [f#, revit api, python, ironpython]
 published: true
 ---
 A couple years back, when I started to use Revit and Revit API with my limited Python knowledge from using RhinoCommon for my Master thesis, I’ve got to contact with two very useful external applications – pyRevit and RevitPythonShell. Many thanks to their creators – Ehsan Iran-Nejad and Daren Thomas, respectively, and also thanks to those bloggers (among them – The Building Coder from Jeremy Tammik) who give numerous insights, and uncountable replies on Stack Overflow to those questions of problems which I happened also to encounter, I have since learnt and written many Python codes in my free time and use them daily at work. Furthermore, because of these experiences I can now write the stand-alone external commands and applications for Revit with F#.

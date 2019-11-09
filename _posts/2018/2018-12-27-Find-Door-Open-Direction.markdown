@@ -2,8 +2,8 @@
 layout: post
 title: "Find Door Open Direction"
 date: 2018-12-27-004346 
-categories: 
-tags: 
+categories: RevitExternalCommand
+tags: [f#, revit api, door]
 published: true
 ---
 When using Revit, have you ever ask yourself: How could I know the opening direction of a door? This question emerged while I was working on a project in its execution phase, and it was a huge task to deliver a door list with the full information about all doors – including door opening directions.

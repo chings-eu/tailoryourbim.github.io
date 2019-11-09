@@ -3,7 +3,7 @@ layout: post
 title: "Find Sum Of Line Length"
 date: 2018-10-18-080529 
 categories: RevitExternalCommand
-tags: 
+tags: [f#, revit api, sum, length, line]
 published: true
 ---
 In Revit 2017, I haven’t find the way to see directly the sum of the line lengths by selecting line elements within the default Revit interface. However, it is relative easy to write a few lines of code and use the TaskDialog interface in Revit API to return the summed length. And here it goes…

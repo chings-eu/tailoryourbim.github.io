@@ -2,8 +2,8 @@
 layout: post
 title: "Find Summed Area Of Rooms | 房間面積總和"
 date: 2018-10-20-081657 
-categories: 
-tags: 
+categories: RevitExternalCommand
+tags: [f#, revit api, sum, area, room]
 published: true
 ---
 下一個指令其實相當簡單的。上一次我們說過，該如何從簡單的曲線選取，指令的輸入，快速地取得曲線的長度總和。而我們這一次要做的其實很類似。假設我們想要快速地知道，好幾個空間的面積總和。這個可以用在當我們做建築內空間規劃時，想要快速的知道分區面積總合，是否超過最大的法規規定防火分區面積。在Revit API中，面積之於空間，就好比長度之於曲線，是一個它的相當簡單的預設參數。

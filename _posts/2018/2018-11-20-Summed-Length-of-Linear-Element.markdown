@@ -2,8 +2,8 @@
 layout: post
 title: "Summed Length of Linear Element | 線型元件的長度總和"
 date: 2018-11-20-174226 
-categories: 
-tags: 
+categories: RevitExternalCommand
+tags: [f#, revit api, length, element]
 published: true
 ---
 還記得我們上一回的文章中，我們探討了如何取得線段長總和，還有以相似的方法取得空間的面積總和？我們也在上述的第二篇中，加入了自動依照案件的長度單位，換算成符合的面積單位。

@@ -2,8 +2,8 @@
 layout: post
 title: "Synchronize Section Box"
 date: 2018-10-08-075251 
-categories: 
-tags: 
+categories: RevitExternalCommand
+tags: [f#, revit api, section box, sync]
 published: true
 ---
 When modeling in Revit, we set up a 3D view properly for our reviewing of the collisions in models to be easily recognizable and efficiently modified, and we would like to jump from one issue to the next quickly, we save the settings in the view template for the similar reviewing attentions.

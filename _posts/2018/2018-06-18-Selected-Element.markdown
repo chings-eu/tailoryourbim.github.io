@@ -3,7 +3,7 @@ layout: post
 title: "Selected Element | 選取物件"
 date: 2018-06-18-053026 
 categories: RevitExternalCommand
-tags: [f#, revit api]
+tags: [f#, revit api, select, element]
 published: true
 ---
 We successfully connected our code with Revit by using “IExternalCommand” interface as an external command, by running which a simple message will pop-up. This connection shows the first step of tailoring your Revit. Now your Revit is standby and listening what you want it to do.

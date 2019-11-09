@@ -3,7 +3,7 @@ layout: post
 title: "Create Detail Lines | "
 date: 2018-07-22-054112 
 categories: RevitExternalCommand
-tags: [f#, revit api]
+tags: [f#, revit api, create, detail line]
 published: true
 ---
 So now, we can already select element in Revit and connect them with our code. Next you might ask: how do we create things in Revit by running our code? For starters, let take look at a simple example, say, we want to choose arbitrary three points in Revit and create lines by connecting points on the two lines, which divide the two lines into, say, n parts:

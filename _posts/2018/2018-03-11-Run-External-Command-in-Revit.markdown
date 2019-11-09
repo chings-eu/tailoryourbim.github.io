@@ -3,7 +3,7 @@ layout: post
 title: "Run External Command in Revit | 加入Revit外部指令"
 date: 2018-03-11-224652 
 categories: RevitExternalCommand
-tags: [f#, revit api]
+tags: [f#, revit api, external command]
 published: true
 ---
 After we’ve created a simple message command, we can now register the compiled dynamic-link library file (.dll) into Revit program.

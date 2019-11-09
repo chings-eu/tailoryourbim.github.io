@@ -2,8 +2,8 @@
 layout: post
 title: "Efficiently View Room Reference | 有效率地快速顯現與隱藏房間的參考"
 date: 2018-12-09-174858 
-categories: 
-tags: 
+categories: RevitExternalCommand
+tags: [f#, revit api, room, view]
 published: true
 ---
 Are you tired of repeatedly taping the tab key for selecting hidden room references? And you are doing so because of the applied view template, which you don’t want to switch to none and back, because it will take too long and you’ve got a deadline to make? Then all you’ll need is a efficient way to just quickly switch the visibility of the room reference on and off.
