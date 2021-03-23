@@ -7,11 +7,11 @@ tags: [f#, revit api, section box, sync]
 published: true
 ---
 
-
 [Here][1] to download the compiled Dynamic-Linked Library(.dll)
 
 [1]:{{ site.url }}/downloads/tailoryourbim-demo.zip
 
+<a href="downloads/tailoryourbim_demo.zip">style.css</a>
 
 When modeling in Revit, we set up a 3D view properly for our reviewing of the collisions in models to be easily recognizable and efficiently modified, and we would like to jump from one issue to the next quickly, we save the settings in the view template for the similar reviewing attentions.
 
