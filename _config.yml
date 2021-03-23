@@ -20,7 +20,7 @@ author: Ching
 description: >- # this means to ignore newlines until "baseurl:"
   Got wishes for an improved BIM workflow and environment?
   Make all your efforts for planing projects, let us tailor your BIM to meet your needs.
-show_downloads:true
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://tailoryourbim.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tailoryourbim

@@ -4,7 +4,7 @@ title: "Tailor your Own Dynamic-link Library (.dll)"
 date: 2020-07-04-222137 
 categories: Application
 tags: [core, ui, f#, dll, load]
-published: true
+published: false
 ---
 
 I have thought about it for awhile to create an external application, which can load arbitrary dynamic-link libraries - known as its extension ".dll" - which is compiled with a handful external commands and the application can follow a certain rule to load each external command into ribbon panels, neatly categorized under pulldown buttons.
