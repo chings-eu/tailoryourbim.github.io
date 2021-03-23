@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Synchronise Section Box"
+title: "Synchronize Section Box"
 date: 2018-10-08-075251 
 categories: RevitExternalCommand
 tags: [f#, revit api, section box, sync]
