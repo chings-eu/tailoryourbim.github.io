@@ -6,6 +6,11 @@ categories: RevitExternalCommand
 tags: [f#, revit api, section box, sync]
 published: true
 ---
+
+Downloads | [tailoryourbim_demo.dll][1] | [tailoryourbim_demo.sln][2]
+[1]:{{ site.url }}/downloads/tailoryourbim_demo.zip
+[2]:{{ site.url }}/downloads/tailoryourbim_demo_solution.zip
+
 When modeling in Revit, we set up a 3D view properly for our reviewing of the collisions in models to be easily recognizable and efficiently modified, and we would like to jump from one issue to the next quickly, we save the settings in the view template for the similar reviewing attentions.
 
 However, the display of the model can easily be saved in template, but the location of the issues can be shown by modifying the section box in the 3d view. by hand. This can be extremely inefficient when dealing with multiple issues with scattered locations. For example, according to my experience, especially when working on the BCFs (Building Collaboration Format). When opening a issue, you will get a default 3d view opened, and the objects that might have collision are shown in the scene. However, the display of this default window might not be the one you want, especially when many overlapping objects are in the scene, you might wish you have your own view open, where you have setup the display.
