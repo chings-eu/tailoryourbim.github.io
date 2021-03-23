@@ -7,9 +7,7 @@ tags: [f#, revit api, section box, sync]
 published: true
 ---
 
-some text and [here is possible to download the file in PDF][1]
 
-[1]:{{ site.url }}/downloads/tailoryourbim-demo.zip
 
 When modeling in Revit, we set up a 3D view properly for our reviewing of the collisions in models to be easily recognizable and efficiently modified, and we would like to jump from one issue to the next quickly, we save the settings in the view template for the similar reviewing attentions.
 
@@ -59,3 +57,7 @@ It is just a short code, but, I think, it can help shortening our time for findi
 Then it’s the main body of the command. We match the list of opened UI-views, which are filtered. If it is empty, then there is nothing to sync, and we response with message to tell user to open other 3d views. Else, we open a transaction to be ready to apply section box to views (line 27), since we are going to modify the model information. The rest is one iteration of the 3d view list – for each of the view we use the SetSectionBox method to apply the section box to it. However we have to note that the downcast of the view as an element to view is necessary (line 33), just like how we get the section box at first (line 11), otherwise these two methods will not be available. The final step is just for a convenient modeling work-flow, to zoom the UI-view, with the new section box, to fit the screen, or we might see nothing after the view manipulation, since the next spot could be far away.
 
 Stay tuned!
+
+some text and [here is possible to download the file in PDF][1]
+
+[1]:{{ site.url }}/downloads/tailoryourbim-demo.zip
