@@ -55,4 +55,6 @@ Then it’s the main body of the command. We match the list of opened UI-views, 
 
 Stay tuned!
 
+some text and [here is possible to download the file in PDF][1]
 
+[1]:{{{{ site.url }}/downloads/tailoryourbim-demo.zip}}
