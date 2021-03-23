@@ -36,3 +36,7 @@ An external command is just as simple as this is! The code, which you want to te
 This is a simple introduction of the common coding structure (what we want to do comes in the line #5) for an external command in Revit. To complete compiling the command as a dynamic-link library file (.dll), Microsoft Visual Studio comes in handy. However, before getting into the compilation of a code, let’s take a look at the add-in file for loading an external command – the .dll file – into Revit environment.
 
 More is to come…
+
+some text and [here is possible to download the file in PDF][1]
+
+[1]:{{{{ site.url }}/downloads/tailoryourbim-demo.zip}}
