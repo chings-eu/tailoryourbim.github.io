@@ -34,6 +34,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+google_analytics: UA-216043528-1
 
 defaults:
   - scope:
