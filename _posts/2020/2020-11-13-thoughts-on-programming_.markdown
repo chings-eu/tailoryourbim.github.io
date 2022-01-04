@@ -6,6 +6,9 @@ categories: Theory
 tags: [thoughts, programming]
 published: false
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+
 As we all know, or at least I felt, programming is gaining its popularity.  
 It's happening, whether one like it or not, having programming as a skill is necessary on one's path of life. It's not about one's carrier - not at all - but it's improving your living efficiency.  
 Why?  

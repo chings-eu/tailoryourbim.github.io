@@ -6,6 +6,8 @@ categories: RevitExternalCommand
 tags: [f#, revit api, set up, solution]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
 Setting up a convenient coding environment is the first step towards efficiency. By using Microsoft Visual Studio, we can easily set up a solution with project(s).
 
 ![img](/assets/img/2017/20171007_01_file_new_project.png)

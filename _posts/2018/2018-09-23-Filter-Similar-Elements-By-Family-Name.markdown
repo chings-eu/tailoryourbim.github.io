@@ -6,6 +6,9 @@ categories: RevitExternalCommand
 tags: [f#, revit api, filter, similar, family, element]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+
 A basic and common way to optimize the efficiency is by giving shortcuts to our most frequently used commands. By combining different shortcuts, i.e. commands, we create drawing processes, and by doing which repeatedly we save the time we wasted by moving mouse cursor and selecting between panels and buttons, repeatedly.
 
 However, sometimes we don’t find the commands we need, or we wish for a certain drawing process but it does not exist as a command or the function is in the shortcut list, and now we might need improved optimizing methods to reach our goals. One of them is to create our own commands, and we can either combine them as supplements with existing commands and run them together by a series of shortcuts, or we can also directly write a single command with all the commands we need and run it with one shortcut.

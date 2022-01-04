@@ -6,4 +6,6 @@ categories:
 tags: 
 published: false
 ---
-        
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+      

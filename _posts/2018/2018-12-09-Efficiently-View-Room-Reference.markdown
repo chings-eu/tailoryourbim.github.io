@@ -6,6 +6,9 @@ categories: RevitExternalCommand
 tags: [f#, revit api, room, view]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+
 Are you tired of repeatedly taping the tab key for selecting hidden room references? And you are doing so because of the applied view template, which you don’t want to switch to none and back, because it will take too long and you’ve got a deadline to make? Then all you’ll need is a efficient way to just quickly switch the visibility of the room reference on and off.
 
 你厭倦了反覆地按同一 tab 鍵只為了選取房間量體的參考十字嗎？而你這麼做只是為了不想把已經設定好的視圖樣版在視圖控制取不取消之間轉換，而浪費寶貴的趕圖時間？若是，你需要的只是一個快速的房間參考顯示轉換機制。

@@ -6,6 +6,9 @@ categories: Concept
 tags: [core, ui, f#, python, thoughts]
 published: false
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+
 Though people told me that no one really want to program by their own for creating their own external tools for improving their daily works, I still believe that's just the current situation. Think about the situation back 20 years agos, nobody would believe that smart phones will be everywhere, people even get to _customize_ their own devices by their own will. So what about thinking 20 years ahead? Remember, now even in promary schools, they are teaching children more about computers, and already about how to program.  
 
 Back to the days when I was studying, in the university there were just a handful of people who digged deeply in the coding world and made something for their thesis. But nowaday there are more, not everyone though. However imagine, when they graduate, get jobs in the architect's offices, how many there would be, who can use coding helping their daily work!  

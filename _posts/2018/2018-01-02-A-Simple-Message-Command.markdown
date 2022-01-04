@@ -6,6 +6,8 @@ categories: RevitExternalCommand
 tags: [f#, revit api, message]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
 
 Last time, we have introduced the basic structure of an external Revit command. To test it, let’s complete it by writing a simple “Hello World!” command (just like every other beginner’s first code is supposed to be), which, when executed, will return a message by using Revit’s built-in UI-command “TaskDialog“. 
 

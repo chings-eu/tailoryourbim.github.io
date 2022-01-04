@@ -6,6 +6,9 @@ categories: RevitExternalCommand
 tags: [f#, revit api, filter, element, category]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+
 When a model is at its beginning building phase, the drawn element are just a few, it’s easy to select them by picking in the views. However, with the model getting more complex, it could be quite a lot of elements overlapping each other just at a corner of the building. Now it could be hard to try to just select a group of elements of targeted categories quickly. Certainly, we can select all of them at once by picking them up with a rectangle all at once, then go to the multi-select tab, filter them, un-check those categories which you don’t want, and then hit OK button.
 
 Can it even be faster?

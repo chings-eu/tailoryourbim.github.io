@@ -10,6 +10,8 @@ published: false
     Jekyll << Liquid << Ruby 
     Liquid: template language created by Shopify
 -->
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
 
 #### Liquid  
 * *objects* use ``{% raw %} {{ }} {% endraw %}`` - This page has layout {{page.layout}}

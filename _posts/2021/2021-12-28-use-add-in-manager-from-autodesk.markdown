@@ -6,11 +6,15 @@ categories: RevitExternalCommand
 tags: f#, revit api
 published: true
 ---
+
 A friend, whom I got to know recently while replying his questions about coding Revit add-ins with F#, brought this question to my attention: 
 
 > "How could we code efficiently, while we must close Revit before we compile the assembly and re-open Revit afterwards, and repeat this for the 1000th time debugging before the code finally works?" 
 
 I asked myself the same question since the very first day when I coded addins for Revit.
+
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
 
 ## The Add-In Manager
 

@@ -6,6 +6,9 @@ categories: RevitExternalCommand
 tags: [f#, revit api, python, ironpython]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+
 A couple years back, when I started to use Revit and Revit API with my limited Python knowledge from using RhinoCommon for my Master thesis, I’ve got to contact with two very useful external applications – pyRevit and RevitPythonShell. Many thanks to their creators – Ehsan Iran-Nejad and Daren Thomas, respectively, and also thanks to those bloggers (among them – The Building Coder from Jeremy Tammik) who give numerous insights, and uncountable replies on Stack Overflow to those questions of problems which I happened also to encounter, I have since learnt and written many Python codes in my free time and use them daily at work. Furthermore, because of these experiences I can now write the stand-alone external commands and applications for Revit with F#.
 
 幾年前，當我剛開始使用 Revit，用我當時寫論文時，從使用 Python 與 RhinoCommon 的經驗來使用 Revit API 時，我接觸到兩個非常有用的外部程式：pyRevit 和 RevitPythonShell。感謝此兩程式的作者：Ehsan Iran-Nejad 和 Daren Thomas；也感謝那些給予深刻經驗的許多部落格作者（其中，Jeremy Tammik 的 The Building Coder），還有許許多多在 Stack Overflow 的問題解答，而也解答了我在當時有的相關疑惑。從那時起，我學習了許多，也在閒暇之餘寫了很多之後在工作上很有效率的工具。此外，也因為這些經驗，我才能用 F# 寫出許多外部指令與程式。

@@ -6,6 +6,9 @@ categories: RevitExternalCommand
 tags: [f#, revit api]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+
 Let's just jump right in to having the first look of the essential of coding a command as  Dynamic-linked library (.dll) for Autodesk Revit.  
 
 To write a Revit plug-in, the first step is to set the transaction mode to manual:

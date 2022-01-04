@@ -6,6 +6,9 @@ categories: RevitExternalCommand
 tags: [f#, revit api, workset]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+
 It has been said that using Worksets in Revit is like using layers, analog to AutoCAD or Rhino. Apart from that, working with a work-shared model and manipulating the worksets, either quickly switching / activating between worksets or assigning elements to worksets, can simply improve our working efficiency – at least the additional possibility to change the visibility of each workset in views is already an improvement.
 
 Even this improvement can be further improved. Imagine we’d have to change the active workset often, in order to put the newly created element into correct “layers” – i.e. worksets. Every time you switch the workset, your mouse cursor have to move down the screen and activate the workset you want then you can create elements. This moving up and down frequently actually costs time and your wrist. Why not make your own command to switch and assign between workset more efficiently?

@@ -6,6 +6,9 @@ categories: RevitExternalCommand
 tags: [f#, revit api, view, design option, override graphic settings]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+
 In this blog entry, let’s talk about how to handle the display of elements in views for example, giving different color to elements from the other similar elements. Here, I’ll demonstrate with an example: assigning distinctive colors to elements according to their different design options. 
 
 Sometimes, we have to work with DesignOptions for considering different design possibilities to improve our planing, and after a while, in the same model file, we might have many design options. In Revit’s default setting, in one single View, we can only show one of the Design Options in their group. Or we can select “automatic”, which shows the content of the Design Option which is currently being edited. It has a blind spot. We can distinguish the elements between different Design Option Groups, if they are similar in every other field, such as of the same category or of the same type.

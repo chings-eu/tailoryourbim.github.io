@@ -6,6 +6,8 @@ categories: Application
 tags: [core, ui, f#, dll, load]
 published: false
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
 
 I have thought about it for awhile to create an external application, which can load arbitrary dynamic-link libraries - known as its extension ".dll" - which is compiled with a handful external commands and the application can follow a certain rule to load each external command into ribbon panels, neatly categorized under pulldown buttons.
 

@@ -6,6 +6,9 @@ categories: RevitExternalCommand
 tags: [f#, revit api, select, element]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+
 We successfully connected our code with Revit by using “IExternalCommand” interface as an external command, by running which a simple message will pop-up. This connection shows the first step of tailoring your Revit. Now your Revit is standby and listening what you want it to do.
 
 The goal of tailoryourbim is about to improve the efficiency of workiung with BIM software, and in this blog, it’s Revit. By writing codes on your own and for your own intention, you can customize a command according to your needs – needs like combining your daily modelling processes into one, customizing how a command should run considering your office standards and combining office drawing procedure (such as line style, annotation style or the title block for your submitting drawings… and so on and so forth). You will no longer be limited by the ability of those built-in commands and your efficiency will not be constrained within the speed of clicking those preset commands one after another and your time will be saved from those lost minutes while waiting for many commands to be fulfilled.

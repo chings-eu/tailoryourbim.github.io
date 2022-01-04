@@ -12,7 +12,7 @@ class Signup extends HTMLElement {
                 <form action="https://ch1n9.eu.pythonanywhere.com/ch1n9_signup" method="POST">
                     <input type="email" name="email_address">
                     <input type="hidden" name="signup_page" value="https://tailoryourbim.com/assets/signup/thanks.html" /> 
-                    <input type="submit" value="Sign up with email">
+                    <input type="submit" value="Sign up with email for more">
                 </form>
             </td>
             </tr>

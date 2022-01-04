@@ -6,6 +6,9 @@ categories: RevitExternalCommand
 tags: [f#, revit api, length, element]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+
 還記得我們上一回的文章中，我們探討了如何取得線段長總和，還有以相似的方法取得空間的面積總和？我們也在上述的第二篇中，加入了自動依照案件的長度單位，換算成符合的面積單位。
 
 Remember in the last post, where we discussed about how we retrieve the summed length of curve elements? After that post, we had a similar one, where the summed value is the retrieved area of room instead of length? And we also had a improved function, with which the report of value is determined automatically according to the current project unit. 

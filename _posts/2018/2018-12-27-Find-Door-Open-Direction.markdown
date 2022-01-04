@@ -6,6 +6,9 @@ categories: RevitExternalCommand
 tags: [f#, revit api, door]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+
 When using Revit, have you ever ask yourself: How could I know the opening direction of a door? This question emerged while I was working on a project in its execution phase, and it was a huge task to deliver a door list with the full information about all doors – including door opening directions.
 
 While taking on this issue, I have come to three relevant questions: How could one know efficiently, that a door family instance has been flipped by using the flipping handle in the family instance and/or mirrored by using the mirror function? Is there any difference between using flipping handle and the mirror without copy function? How does the mirror function affect the family which has no flipping handles? These questions are probably especially interesting for those who have happened to be the former users of AutoCAD’s blocks, someone like me.

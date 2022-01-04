@@ -6,6 +6,9 @@ categories: RevitExternalCommand
 tags: [f#, revit api, create, detail line]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+
 So now, we can already select element in Revit and connect them with our code. Next you might ask: how do we create things in Revit by running our code? For starters, let take look at a simple example, say, we want to choose arbitrary three points in Revit and create lines by connecting points on the two lines, which divide the two lines into, say, n parts:
 
 This process to draw with the code is just like the process that we can imagine when we draw in Revit by hand: get three points, draw two lines between them, divide them into n parts with points and connect points from one line to another in the oder of the parameters on each line.

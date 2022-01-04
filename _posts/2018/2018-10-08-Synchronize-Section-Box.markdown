@@ -6,6 +6,8 @@ categories: RevitExternalCommand
 tags: [f#, revit api, section box, sync]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
 
 <a href="../../downloads/tailoryourbim_demo.zip" download>Here</a> to download the compiled Dynamic-Linked Library(.dll)
 

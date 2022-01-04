@@ -6,6 +6,9 @@ categories: RevitExternalCommand
 tags: [f#, revit api, external command]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+
 After we’ve created a simple message command, we can now register the compiled dynamic-link library file (.dll) into Revit program.
 
 For doing that, we have to create an add-in file.

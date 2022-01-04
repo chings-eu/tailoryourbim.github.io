@@ -6,6 +6,9 @@ categories: Rhino Plug-in
 tags: [f#, rhinocommon]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+
 A few years back, when I was writing my thesis, titled “Permeation”, about philosophy, architectural geometry and programming, RhinoCommon, Grasshopper and Python were the great helpers to bring my ideas into the light. Since then, they are essential parts for my work along with Revit. When F# came to my life, it brought my understanding of programming further into a broader view and another level.
 
 > F# is a mature, open source, cross-platform, functional-first programming language. It empowers users and organizations to tackle complex computing problems with simple, maintainable and robust code. -[F# Software Foundation](http://fsharp.org)

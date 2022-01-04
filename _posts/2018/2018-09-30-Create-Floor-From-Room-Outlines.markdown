@@ -6,6 +6,9 @@ categories: RevitExternalCommand
 tags: [floor, room, f#, revit api]
 published: true
 ---
+<script src="/assets/signup/signup.js"></script>
+<signup-component></signup-component>
+
 By using default Revit’s tools, one can create ceiling automatically. However, to create floors, by default, one has to draw the outlines by hand. Although, luckily, we can draw the outlines by selecting the edges from the adjacent elements, sometimes if we are not so lucky, we will probably select the wrong one and it’s time-consuming to erase the last one and select again. It happens, for example, when we have more than one layer of wall elements over each other and the thinner one at front stands over the floor, whereas the inner wall element is outer circumference of the floor element, and its edge is supposed to be selected.
 
 A much useful tool, drawing automatically floors, doesn’t exist yet, maybe one can found something in the forums, but not in the default Revit tools, as far as I know. However, it’s actually rather easy to write one by yourself. The process is simple, just like you can imagine how you draw them by hand: select the edges of the adjacent elements – walls, columns… etc. These elements are mostly room-binding, which means the outline of a floor would be similar in the form of the room, and one just needs to define until which room-binding element the floor is supposed to be constructed – not only in model but also in reality.
