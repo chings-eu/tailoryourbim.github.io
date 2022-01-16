@@ -34,3 +34,6 @@ gem "webrick", "~> 1.7"
 # Google-Analytics
 gem "github-pages", group: :jekyll_plugins
 gem 'jekyll-seo-tag'
+
+# Update kramdown to 2.3.1
+gem "kramdown", ">= 2.3.1"
