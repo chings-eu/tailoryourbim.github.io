@@ -36,4 +36,8 @@ gem "github-pages", group: :jekyll_plugins
 gem 'jekyll-seo-tag'
 
 # Update kramdown to 2.3.1
-gem "kramdown", ">= 2.3.1"
+gem 'kramdown', '~> 2.3', '>= 2.3.1'
+
+group :jekyll_plugins do
+  gem "jekyll-youtube"
+end
