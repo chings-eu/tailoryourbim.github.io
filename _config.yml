@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: tailor | your | BIM 
 company: © 2022 Chings e.U.
+companyurl: "http://chings.eu"
 header: ./assets/img/logotyb.png
 email: info@tailoryourbim.com
 author: Ching
@@ -26,6 +27,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://tailoryourbim.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tailoryourbim
 github_username: tailoryourbim
+linkedin_username: tailoryourbim
 
 permalink: /:categories/:title/
 
@@ -41,7 +43,7 @@ google_analytics: UA-216043528-1
 
 defaults: 
   - scope:
-      path: ".../assets/img/"
+      path: "/assets/img/"
     values:
       image: true
 
@@ -53,6 +55,6 @@ defaults:
 #   - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/
-#   - vendor/cache/
+#   - vendor/cache/ 
 #   - vendor/gems/
 #   - vendor/ruby/
