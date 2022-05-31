@@ -13,7 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: tailor | your | BIM
+title: tailor | your | BIM 
+company: © 2022 Chings e.U.
 header: ./assets/img/logotyb.png
 email: info@tailoryourbim.com
 author: Ching
@@ -34,11 +35,13 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+#   - jekyll-remote-theme
+# remote_theme: jekyll/minima
 google_analytics: UA-216043528-1
 
-defaults:
+defaults: 
   - scope:
-      path: "assets/img/"
+      path: ".../assets/img/"
     values:
       image: true
 
