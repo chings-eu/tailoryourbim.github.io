@@ -32,11 +32,12 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem "webrick", "~> 1.7"
 
 # Google-Analytics
-gem "github-pages", group: :jekyll_plugins
 gem 'jekyll-seo-tag'
 
 # Update kramdown to 2.3.1
 gem 'kramdown', '~> 2.3', '>= 2.3.1'
+# Update commonmarker to 0.23.4
+gem "commonmarker", ">= 0.23.4"
 
 group :jekyll_plugins do
   gem "jekyll-youtube"
