@@ -39,7 +39,8 @@ plugins:
   - jekyll-seo-tag
 #   - jekyll-remote-theme
 # remote_theme: jekyll/minima
-google_analytics: UA-216043528-1
+#google_analytics: UA-216043528-1
+google_analytics: G-5QTTTRNC1H
 
 defaults: 
   - scope:
