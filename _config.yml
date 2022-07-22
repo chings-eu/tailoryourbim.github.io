@@ -33,12 +33,13 @@ permalink: /:categories/:title/
 
 # Build settings
 markdown: kramdown
-theme: minima
+#theme: minima
+remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-#   - jekyll-remote-theme
-# remote_theme: jekyll/minima
+  - jekyll-remote-theme
+
 #google_analytics: UA-216043528-1
 google_analytics: G-5QTTTRNC1H
 
