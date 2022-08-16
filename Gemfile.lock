@@ -269,7 +269,6 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-youtube
   kramdown (~> 2.3, >= 2.3.1)
-  minima
   tzinfo-data
   webrick (~> 1.7)
 

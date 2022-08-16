@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Contact
 permalink: /contact/
 address: Herrengasse 6-8, Vienna 1010, Austria
