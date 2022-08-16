@@ -62,5 +62,4 @@ defaults:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# theme dinky
-show_downloads: true
+
