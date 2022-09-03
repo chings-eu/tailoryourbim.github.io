@@ -56,7 +56,7 @@ This was an introduction to the tyRCore, a great starting point for you to build
 I'll be grateful to receive some feedbacks via [e-mail][Contact] from you to improve **tyRCore**!  
 And if you like it, buy me a coffee by following a click on the coffee cup on the right-hand side corner of this page. 
 
-Until then, dig in and have fun!
+Until next time, dig in and have fun!
 
 
 [Set up F# solution]: ../Start-Up-an-FSharp-Solution-for-Revit-Plug-In
