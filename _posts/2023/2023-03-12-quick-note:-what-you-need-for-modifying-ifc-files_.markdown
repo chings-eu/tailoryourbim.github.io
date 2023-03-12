@@ -46,7 +46,3 @@ That's it! Now you can retrieve information and also modify the ifc model. Let's
 * Like learnig every other programming language, [Hello World](https://blenderbim.org/docs-python/ifcopenshell-python/hello_world.html) is always the best first step.
 
 Stay tuned!
-
-
-# _Coding **Ifcjs**_
-
