@@ -5,11 +5,63 @@
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
+    <!-- App style -->
+    <!-- IDE style -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
-    <script type="module" crossorigin src="/tailoryourIfc/assets/index-THnflY1b.js"></script>
-    <link rel="stylesheet" crossorigin href="/tailoryourIfc/assets/index-fi2bvvZa.css">
+
+    <script type="module" crossorigin src="/assets/index-cpRxk0sw.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-6Q8XVvVd.css">
   </head>
   <body>
-    <div id="app" style="width: 100vw; height: 100vh;"></div>
+    <div>
+        <!-- <div id="app" style="width: 60vw; height: 100vh; float: left"></div> -->
+        <div id="app" style="width: 100vw; height: 70vh; float: top"></div>
+
+        <!-- IDE -->
+        <!-- <div id="ide" style="width: 40vw; height: 40vh; float:right"> -->
+        <div id="ide" style="width: 100vw; height: 30vh; float:button">
+            <div>
+                <nav id="banner" class="text-dark d-flex align-items-center pl-2 bg-warning">
+                    <span>Editor (Use Ctrl-Enter to execute)</span>
+                    <div id="save" class="btn btn-warning" action>Save</div>
+                    <div id="load" class="btn btn-warning" action>Load</div>
+                    <div id="clean" class="btn btn-warning" action>Clean</div>
+                    <div id="execute" class="btn btn-warning" action>Execute</div>
+                </nav>
+                <div id="editor"></div>
+            </div>
+            <!-- <div>
+                <nav id="banner" class="text-light d-flex align-items-center pl-2 bg-dark">
+                    <span>Dev Console (Use Ctrl-I to clear console)</span>
+                    <div class="btn btn-dark" action>CLEAR</div>
+                </nav>
+                <pre id="console"
+                    class="border border-dark bg-light text-dark p-2">Welcome to the JS Console<br />&raquo;  </pre>
+            </div> -->
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script> -->
+
+    
+    <!-- <script src="/src/lib/IDEWindow/static/src-min/ace.js" type="text/javascript" charset="utf-8"></script> -->
+    <!-- <script src="node_modules/ace-builds/src-min/ace.js" type="module" charset="utf-8"></script> -->
+    <script src="node_modules/ace-builds/src-min/ace.js" type="text/javascript" charset="utf-8"></script>
+
+    
+    <!-- <script src="/src/lib/IDEWindow/index.js" type="module"></script> -->
   </body>
 </html>
