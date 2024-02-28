@@ -40,6 +40,8 @@ gem 'kramdown', '~> 2.3', '>= 2.3.1'
 # Update commonmarker to 0.23.4
 gem "commonmarker", ">= 0.23.4"
 
+gem 'liquid', '~> 4.0', '>= 4.0.4'
+
 group :jekyll_plugins do
   gem "jekyll-youtube"
 end
