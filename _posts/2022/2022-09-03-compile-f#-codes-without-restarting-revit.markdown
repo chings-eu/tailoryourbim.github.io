@@ -24,7 +24,7 @@ This is quite straight forward - just go to this [page][Get Visual Studio Commun
 Follow the [other post][Set up F# solution] for a step-by-step tutorial to set up an F# solution. For working with **tyRCore**, you just need additionally set up a folder collecting your codes with a <u>strucutre</u> as mentioned [below](#structure), or directly fork me on [GitHub][Using_tyRCore] to get a template with all the needed setups for Visual Studio solution to work with tyRCore. Without further setup, this repository can be immediately loaded into Revit through _tyRCore_ add-in.
 
 * _Download and install **tyRCode**_  
-Download tyRCore [here][Setup tyRCore] or from Autodesk App Store. The installation is straight forward. However, if you're not sure if you'd do it right, just follow the _**README**_ section in this [repository][Using_tyRCore] from above.
+Download tyRCore for Revit 2024 [here][Setup tyRCore]. The installation is straight forward. However, if you're not sure if you'd do it right, just follow the _**README**_ section in this [repository][Using_tyRCore] from above.
 
 # _**Loading** Codes_  
 This is a <u>trial version</u> of **tyRCore** with simple interface layouts and automatic toolbar setups in the Revit environment. However, regardless of its work-in-progress, it's a version which serves the basic needs, as I work with it everyday in Revit and it saved me huge amount of time from inefficient restarts while debugging, and I could then produce a lot more within a narrow time frame.  
@@ -62,5 +62,5 @@ Until next time, dig in and have fun!
 [Set up F# solution]: ../Start-Up-an-FSharp-Solution-for-Revit-Plug-In
 [Get Visual Studio Community]: https://visualstudio.microsoft.com/
 [Using_tyRCore]: https://github.com/chings-eu/Using_tyRCore
-[Setup tyRCore]: ../../downloads/tyR22Core_v1.0.exe
+[Setup tyRCore]: ../../downloads/tyR24Core_v1.0.exe
 [Contact]: mailto:info@tailoryourbim.com
