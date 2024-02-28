@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Start Coding F# Library for Revit / 開始編程 Revit 的 F# 指令集"
+title: "Start Coding F# Library for Revit | 開始編程 Revit 的 F# 指令集"
 date: 2017-10-07-212312 
 categories: RevitExternalCommand
 tags: [f#, revit api]
