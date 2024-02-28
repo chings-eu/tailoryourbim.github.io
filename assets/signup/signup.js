@@ -6,7 +6,7 @@ class Signup extends HTMLElement {
         this.innerHTML = `
             <div class="container">
 
-            <table style="border:none; background-color:#ffd700">
+            <table style="border:none; background-color:#8564a2">
             <tr>
             <td style="text-align:middle;  width: 800px">
                 <form action="https://ch1n9.eu.pythonanywhere.com/ch1n9_signup" method="POST">
