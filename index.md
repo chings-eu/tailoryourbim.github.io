@@ -14,3 +14,13 @@ _**tailoryourbim.com**_ is a place where you can find information for your BIM i
 <signup-component></signup-component>
 
 Dig in and have fun!
+
+# **Latest Video Update**
+
+<section>
+<iframe display="flex" width="100%" height="417" src="https://www.youtube.com/embed/HyP0Ugd0lpU?si=_cT1cvZ4VMDibLwm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+<p>
+</p>
+
+# **Posts**
