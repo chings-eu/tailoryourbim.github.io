@@ -4,7 +4,7 @@ title: "Tailor Your Ifc with openbim-components."
 date: 2023-12-18-134905 
 categories: OpenbBIM-Components
 tags: JavaScript TypeScript IfcJs
-published: false
+published: true
 ---
 <script src="/assets/signup/signup.js"></script>
 <signup-component></signup-component>
