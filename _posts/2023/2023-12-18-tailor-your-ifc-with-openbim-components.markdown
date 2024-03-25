@@ -11,5 +11,5 @@ published: true
 
 # **Try** this:
 A [Web Ifc Viewer](/assets/tyIfc/index.html)
-another [Web Ifc Streamer](/assets/dist/index.html)
+another testing [Web Ifc Streamer](/assets/dist/index.html)
 based on [openbim-components](https://github.com/IFCjs/components)
