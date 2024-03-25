@@ -10,4 +10,6 @@ published: true
 <signup-component></signup-component>
 
 # **Try** this:
-A [Web Ifc Viewer](/assets/tyIfc/index.html) based on [openbim-components](https://github.com/IFCjs/components)
+A [Web Ifc Viewer](/assets/tyIfc/index.html)
+another [Web Ifc Streamer](/assets/dist/index.html)
+based on [openbim-components](https://github.com/IFCjs/components)
