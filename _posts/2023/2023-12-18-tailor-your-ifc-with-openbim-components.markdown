@@ -2,7 +2,7 @@
 layout: post
 title: "Tailor Your Ifc with openbim-components."
 date: 2023-12-18-134905 
-categories: OpenbBIM-Components
+categories: OpenBIM-Components
 tags: JavaScript TypeScript IfcJs
 published: true
 ---
