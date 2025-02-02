@@ -13,10 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: tailor | your | BIM 
+title: τ tailor . υ your . BIM 
 company: © 2022 Chings e.U.
 companyurl: "http://chings.eu"
-header: /assets/img/logoty.png
+# header: /assets/img/logoty.png
+logo: /assets/img/logoty.png
+favicon: /assets/img/favicon.png
 email: info@tailoryourbim.com
 author: Ching
 description: >- # this means to ignore newlines until "baseurl:"

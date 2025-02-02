@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![Image](/assets/img/logoty.png){:height="68px"}  
+<img src="{{ site.logo }}" alt="Logo" width="36px">
 
 Hi, this is the author of _**tailoryourbim.com**_ and my name is **Ching-Hua Chen**, in its original language, Mandarin: _陳景華_.
 
