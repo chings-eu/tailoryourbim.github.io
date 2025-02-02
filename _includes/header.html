@@ -1,9 +1,20 @@
 <header class="site-header" role="banner">
-  
+
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <!-- <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> -->
+
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+      <img src="{{ site.logo }}" alt="Logo" width="28px"> 
+      <span>    </span>
+      <!-- {{ site.title_html }} -->
+      <span style='color: #B042FF;'>t</span>
+      <span style='color: #b8b8b8;'>ailor.</span>
+      <span style='color: #01bbd4;'>y</span>
+      <span style='color: #b8b8b8;'>our.bim </span>
+    </a>
+    
 
     {%- if page_paths -%}
       <nav class="site-nav">
@@ -28,3 +39,4 @@
     {%- endif -%}
   </div>
 </header>
+
