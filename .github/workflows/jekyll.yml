@@ -60,7 +60,7 @@ jobs:
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
+        # id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          path: _site/
+        # with:
+        #   path: _site/
