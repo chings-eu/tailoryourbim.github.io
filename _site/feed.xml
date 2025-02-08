@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-08T10:57:32+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">tailor . your . bim</title><subtitle>Got wishes for an improved BIM workflow and environment? Make all your efforts for planing projects, let us tailor your BIM to meet your needs.</subtitle><author><name>Ching</name></author><entry><title type="html">How to Investigate Your Ifc Model with IfcOpenShell and Jupyter Notebook</title><link href="http://localhost:4000/how-to-investigate-your-ifc-model-with-ifcopenshell-and-jupyter-notebook/" rel="alternate" type="text/html" title="How to Investigate Your Ifc Model with IfcOpenShell and Jupyter Notebook" /><published>2024-02-20T00:00:00+01:00</published><updated>2024-02-20T00:00:00+01:00</updated><id>http://localhost:4000/how-to-investigate-your-ifc-model-with-ifcopenshell-and-jupyter-notebook</id><content type="html" xml:base="http://localhost:4000/how-to-investigate-your-ifc-model-with-ifcopenshell-and-jupyter-notebook/"><![CDATA[<script src="/assets/signup/signup.js"></script>
+
+<signup-component></signup-component>
+
+<p>Once you’ve set up your Python virtual environment by following this post, you can start to test and play around with you codes, without worrying wasting time on worrying if installed packages would get mixed up with other Python projects. Since now you have this one folder with all you needs for your Ifc model at your disposal.</p>
+
+<p>Let’s dig in to see how to use it efficiently.</p>
+
+<h2 id="run-you-code-step-by-step">Run you code step by step</h2>
+
+<p>Sometimes your Ifc file could be heavy for loading. You’ll also have to load Ifc file with IfcOpenShell, and only after that, the data is ready for you. It could be very time consuming to load your Ifc model repeatedly, every time you update your codes.</p>
+
+<p>That’s where the Jupyter comes in.</p>
+
+<p>Jupyter lets you split your Python codes into sections, and you can run the sections separately. The great thing is, that you can modify your code in a section and instantly re-run it without repeatedly running something from above again and again. But, of course, the variables that you’re using in the current cell must be run before hand from above.</p>
+
+<p><img src="image.png" alt="alt text" /></p>
+
+<h2 id="visualize-and-manipulate-your-data-with-pandas">Visualize and manipulate your data with Pandas</h2>
+
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVNpgQ2-Q=/?moveToViewport=-1793,-156,2174,1364&amp;embedId=600564706540" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen=""></iframe>]]></content><author><name>Ching</name></author><category term="Python" /><category term="IfcOpenShell" /><category term="Ifc" /><category term="Jupyter" /><category term="Pandas" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Quick Setup Your IfcOpenShell Python Coding Environment</title><link href="http://localhost:4000/ifcopenshell/quick-setup-your-ifcopenshell-python-coding-environment/" rel="alternate" type="text/html" title="Quick Setup Your IfcOpenShell Python Coding Environment" /><published>2024-02-15T00:00:00+01:00</published><updated>2024-02-15T00:00:00+01:00</updated><id>http://localhost:4000/ifcopenshell/quick-setup-your-ifcopenshell-python-coding-environment</id><content type="html" xml:base="http://localhost:4000/ifcopenshell/quick-setup-your-ifcopenshell-python-coding-environment/"><![CDATA[<script src="/assets/signup/signup.js"></script>
+
+<signup-component></signup-component>
+
+<h1 id="quick-virtual-environment-setups">Quick virtual environment setups</h1>
+<p>First of all, install Python and Visual Studio Code</p>
+
+<h2 id="a-folder-as-environment">A folder as environment</h2>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">mkdir demos
+cd demos
+code .
+</span></code></pre></div></div>
+<h1 id="python-and-ifcopenshell"><strong>Python</strong> and <strong>IfcOpenShell</strong></h1>
+
+<div class="language-fsharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// F# code</span>
+<span class="k">let</span> <span class="n">a</span> <span class="p">=</span> <span class="mi">20</span>
+</code></pre></div></div>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="go">pip install ifcopenshell</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Python code
+</span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">import</span> <span class="nn">ifcopenshell</span>
+<span class="n">pth</span> <span class="o">=</span> <span class="sa">r</span><span class="s">""</span>
+<span class="n">ifc</span> <span class="o">=</span> <span class="n">ifcopenshell</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="n">pth</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">ifc</span><span class="p">)</span></code></pre></figure>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"Hello everyone!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="setup-visual-studio-code">Setup <strong>Visual Studio Code</strong></h1>
+
+<h1 id="setup-python-virtual-environment">Setup Python <strong>Virtual Environment</strong></h1>
+
+<h1 id="install-packages">Install <strong>Packages</strong></h1>
+
+<h1 id="workflow-example"><strong>Workflow</strong> Example</h1>
+
+<h2 id="issues">Issues</h2>
+<h3 id="pset-in-model-not-fitting-requirement-from-the-platform">Pset in model not fitting requirement from the platform</h3>
+<p>Goal: Linking element to create cashflow
+Process: See the needs of positions, edit geometry accordingly, gather properties and correct quantities
+Contract posisitions, Schedule positions
+Deal with:
+    Geometry, properties, quantities
+    Pset, Qset
+    Assembly, Curtain walls, Stairs</p>
+
+<h3 id="where-are-the-elements-with-changed-identities">Where are the elements with changed identities</h3>
+<p>Goal: Find if there are elements with different ifc identity
+Process: Find and mark the global ids not existing in both models
+Contract positions
+Deal with:
+    Properties, geometry
+    Changed element identities from two models
+    Setup a customized property set</p>
+
+<h3 id="how-to-compare-the-changing-element-properties-from-three-models">How to compare the changing element properties from three models</h3>
+<p>Goal: Listing the property difference for the same global id
+Process: Ask wanted information and list in Excel sheets
+Deal with:
+    Properties
+    Three different model versions
+    Reading properties, writing to Excel</p>
+
+<h2 id="what-we-have-learned">What we have learned?</h2>
+<p>Quick setup Python virtual environment
+Quick understanding Ifc model structure - dig in relations (property set, assembly) - Python, Jupyter, Pandas
+Property set manipulation - IfcOpenShell
+Retrieving Base Quantities - SimpleBim, IfcOpenShell
+Spatial containment modification - IfcOpenShell API
+Model geometry comparison - overlapping geometry, different global id - IfcOpenShell, Solibri
+Multiple model historical comparison - same global id, different properties - IfcOpenShell, Excel</p>]]></content><author><name>Ching</name></author><category term="IfcOpenShell" /><category term="Python" /><category term="IfcOpenShell" /><category term="Ifc" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Tailor Your Ifc with openbim-components.</title><link href="http://localhost:4000/openbim-components/tailor-your-ifc-with-openbim-components/" rel="alternate" type="text/html" title="Tailor Your Ifc with openbim-components." /><published>2023-12-18T00:00:00+01:00</published><updated>2023-12-18T00:00:00+01:00</updated><id>http://localhost:4000/openbim-components/tailor-your-ifc-with-openbim-components</id><content type="html" xml:base="http://localhost:4000/openbim-components/tailor-your-ifc-with-openbim-components/"><![CDATA[<script src="/assets/signup/signup.js"></script>
+
+<signup-component></signup-component>
+
+<h1 id="try-this"><strong>Try</strong> this:</h1>
+<p>A <a href="/assets/tyIfc/index.html">Web Ifc Viewer</a>
+another testing <a href="/assets/dist/index.html">Web Ifc Streamer</a>
+based on <a href="https://github.com/IFCjs/components">openbim-components</a></p>]]></content><author><name>Ching</name></author><category term="OpenBIM-Components" /><category term="JavaScript" /><category term="TypeScript" /><category term="IfcJs" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Compile F# Codes Without Restarting Revit</title><link href="http://localhost:4000/revitexternalcommand/compile-f-codes-without-restarting-revit/" rel="alternate" type="text/html" title="Compile F# Codes Without Restarting Revit" /><published>2022-09-03T00:00:00+02:00</published><updated>2022-09-03T00:00:00+02:00</updated><id>http://localhost:4000/revitexternalcommand/compile-f#-codes-without-restarting-revit</id><content type="html" xml:base="http://localhost:4000/revitexternalcommand/compile-f-codes-without-restarting-revit/"><![CDATA[<p><strong>Visual Studio Community</strong> is a great tool, when coding your own <u>Revit add-in</u> command. While typing, you have its <u>IntelliSense</u> helping you by suggesting your next move, so that you will not get lost in the API library jungle. Especially the one from Revit. However, you’ve always got have to re-compile your whole <em>dynamic linked library</em> from the whole solution, and it took you an huge amount of time for waiting Revit to re-start and re-load your extremely heavy model, even if you’ve just changed a tiny bit of code for debugging. Even if just for one letter. Nevertheless, in this case you have to have all your codes - not only the one you’re debugging now - compiling-ready to prevent any error emerging while building it. But sometimes you’ll have a few other unfinished codes, and you want to just test this current one really quickly to see if it works or how a certain section of it works.</p>
+
+<p>I found this in-efficient issue hugely annoying right at beginning of my coding experience for Revit. Since then, I have been working on developing an <u>efficient</u>, <u>dynamic</u> <strong>coding environment</strong> along with an <strong>instant</strong> <u>F#-code-compiler</u>. After daily testing and repeated improvement, I’d like to share with the public: the <strong>Tailor-your-Revit core (tyRCore)</strong>.</p>
+
+<script src="/assets/signup/signup.js"></script>
+
+<signup-component></signup-component>
+
+<h1 id="coding-environment"><em>Coding <strong>Environment</strong></em></h1>
+<p>As mentioned, the advantage that we <u>definitely</u> should take from Visual Studio Community is its IntelliSense, and this is the reason that this compiler should be built upon with a <u>matching</u> solution folder structure. Here are the steps for setting up your <em>efficient, dynamic and instant</em> coding environment to your Revit:</p>
+
+<ul>
+  <li>
+    <p><em>Download and install <strong>Visual Studio Community</strong></em><br />
+This is quite straight forward - just go to this <a href="https://visualstudio.microsoft.com/">page</a> for Visual Studio and get the <strong>community</strong> version, for Windows or Mac, and install it with those <u>packages</u>, relevant to developing F# desktop programs.</p>
+  </li>
+  <li>
+    <p><em>Create an <strong>F# solution</strong></em><br />
+Follow the <a href="../Start-Up-an-FSharp-Solution-for-Revit-Plug-In">other post</a> for a step-by-step tutorial to set up an F# solution. For working with <strong>tyRCore</strong>, you just need additionally set up a folder collecting your codes with a <u>strucutre</u> as mentioned <a href="#structure">below</a>, or directly fork me on <a href="https://github.com/chings-eu/Using_tyRCore">GitHub</a> to get a template with all the needed setups for Visual Studio solution to work with tyRCore. Without further setup, this repository can be immediately loaded into Revit through <em>tyRCore</em> add-in.</p>
+  </li>
+  <li>
+    <p><em>Download and install <strong>tyRCode</strong></em><br />
+Download tyRCore for Revit 2024 <a href="../../downloads/tyR24Core_v1.0.exe">here</a>. The installation is straight forward. However, if you’re not sure if you’d do it right, just follow the <em><strong>README</strong></em> section in this <a href="https://github.com/chings-eu/Using_tyRCore">repository</a> from above.</p>
+  </li>
+</ul>
+
+<h1 id="loading-codes"><em><strong>Loading</strong> Codes</em></h1>
+<p>This is a <u>trial version</u> of <strong>tyRCore</strong> with simple interface layouts and automatic toolbar setups in the Revit environment. However, regardless of its work-in-progress, it’s a version which serves the basic needs, as I work with it everyday in Revit and it saved me huge amount of time from inefficient restarts while debugging, and I could then produce a lot more within a narrow time frame.</p>
+
+<p>After installing tyRCore into Revit, you’ll find these <u>two new features</u> added onto the tool ribbon:</p>
+
+<ul>
+  <li>A new <em>PushButton</em> <strong>Load F# Codes</strong> in the external tools from <em>Add-ins</em> tab, and</li>
+</ul>
+<p align="center">
+    <img src="/assets/img/2022/220829_01_Button in Add-Ins Tab.png" style="width:80%;" />
+</p>
+
+<ul>
+  <li>A new <em>RibbonTab</em> named <strong>tyR Core</strong> on the ribbon.</li>
+</ul>
+<p align="center">
+    <img src="/assets/img/2022/220829_02_Button in tyR Tab.png" style="width:80%;" />
+</p>
+
+<h1 id="structure"><em><strong>Structure</strong></em></h1>
+<p>Both of these two buttons are calling the same command (i.e. same source code) and have the loading <em>PushButton</em> “Load Your FSharp Codes”. With a click on either of them, you’ll be asked to pick the folder with your F# codes and load them into Revit ribbon, according to your folder structure. The difference between the two buttons is just that, you can only call this command without an open document, if it’s registered standalone as an external command. For demonstration purpose, I’ll just take our pre-set F# solution <u>Using_tyRCore</u> as an example:</p>
+
+<ul>
+  <li>The name of the upper directory <em>Using_tyRCore</em> from your choosen folder <strong>cmd</strong> will be the name of the <em><u>ribbon tab</u></em> (It’s also the name of your project in Visual studio.)</li>
+  <li>The names of <strong>sub-folders</strong> will be mapped with formats, either <em>RibbonPanel</em> or <em>RibbonPanel.PullDownButton</em>. (e.g. <u>modify</u> or <u>modify.parameter</u>)</li>
+  <li>In the sub-folders, you saved your F# source codes, and each of them will be connect to a <em>PushButton</em> and put under a <em>RibbonPanel</em> or within a <em>PullDownButton</em> respectively.</li>
+</ul>
+
+<p>By the way, <strong>tyRCore</strong> will also load automatically all those source codes, which are located in the folders, whose names starting with <u>"standalone"</u>, additionally as standalone external commands, which can be found in the “Add-Ins” tab, “External” panel. They can be executed without opening any Revit documents at first. This comes in handy, if you code some commands which should run <em>“formlessly”</em>.</p>
+
+<h1 id="furthermore"><em><strong>Furthermore</strong></em></h1>
+<p>This was an introduction to the tyRCore, a great starting point for you to build a comprehensive, structured <u>Revit external commands library</u> step-by-step for your own workflow. I’ll cover more about, how to put it into action, later on, and you’ll see how this will change your experience with <strong>coding in BIM</strong>!</p>
+
+<p>I’ll be grateful to receive some feedbacks via <a href="mailto:info@tailoryourbim.com">e-mail</a> from you to improve <strong>tyRCore</strong>!<br />
+And if you like it, buy me a coffee by following a click on the coffee cup on the right-hand side corner of this page.</p>
+
+<p>Until next time, dig in and have fun!</p>]]></content><author><name>Ching</name></author><category term="RevitExternalCommand" /><category term="tailor-your-revit" /><summary type="html"><![CDATA[Visual Studio Community is a great tool, when coding your own Revit add-in command. While typing, you have its IntelliSense helping you by suggesting your next move, so that you will not get lost in the API library jungle. Especially the one from Revit. However, you’ve always got have to re-compile your whole dynamic linked library from the whole solution, and it took you an huge amount of time for waiting Revit to re-start and re-load your extremely heavy model, even if you’ve just changed a tiny bit of code for debugging. Even if just for one letter. Nevertheless, in this case you have to have all your codes - not only the one you’re debugging now - compiling-ready to prevent any error emerging while building it. But sometimes you’ll have a few other unfinished codes, and you want to just test this current one really quickly to see if it works or how a certain section of it works.]]></summary></entry><entry><title type="html">Use the Add-In Manager from Autodesk</title><link href="http://localhost:4000/revitexternalcommand/use-add-in-manager-from-autodesk/" rel="alternate" type="text/html" title="Use the Add-In Manager from Autodesk" /><published>2021-12-28T00:00:00+01:00</published><updated>2021-12-28T00:00:00+01:00</updated><id>http://localhost:4000/revitexternalcommand/use-add-in-manager-from-autodesk</id><content type="html" xml:base="http://localhost:4000/revitexternalcommand/use-add-in-manager-from-autodesk/"><![CDATA[<p>A friend, whom I got to know recently while replying his questions about coding Revit add-ins with F#, brought this question to my attention:</p>
+
+<blockquote>
+  <p>“How could we code efficiently, while we must close Revit before we compile the assembly and re-open Revit afterwards, and repeat this for the 1000th time debugging before the code finally works?”</p>
+</blockquote>
+
+<p>I asked myself the same question since the very first day when I coded addins for Revit.</p>
+
+<script src="/assets/signup/signup.js"></script>
+
+<signup-component></signup-component>
+
+<h2 id="the-add-in-manager">The Add-In Manager</h2>
+
+<p>While doing researches for this purpose, I’ve learnt much and created an early version of this kind of code (re-)loading engine for F# codes. Since then, I have been using it for writing scripts of external commands. Together with the helpful Intellisense from Visual Studio, much of the time for closing and reopening Revit has been saved while the codes are being debugged and changed. I meant to share this engine soon, when it’s ready. At the meantime, there is a great add-in, named <strong>Add-In-Manager</strong>, released by Autodesk and zipped within each version of the <em>SDK</em> package.</p>
+
+<p>Now, let’s have a look at it. How to get it and run it in Revit environment.</p>
+
+<p>First thing first, here is where you can get the <em>msi</em> file for the SDK:</p>
+
+<p><a href="https://www.autodesk.com/developer-network/platform-technologies/revit">https://www.autodesk.com/developer-network/platform-technologies/revit</a></p>
+
+<p>Visit the page above, and scroll down to the bottom, then you’ll see the links for downloading SDKs for Revit versions respectively.</p>
+
+<p>Run the <em>msi</em> file after you download it, you may find it zipped in a <em>zip</em> file, for instance, the one for Revit 2020.</p>
+
+<p>The installation is just an automated unzipping process to copy all the files into a given folder, and by default it’s under your disk <strong>C</strong>. I’d just leave it like that since you can just delete it later on once you got the Add-In Manager files. (But I’d suggest to browse around to see if you can came up with some useful tools.)</p>
+
+<p align="center">
+    <img src="/assets/img/2021/211228_01_inside-addInManager-SDK.png" style="width:80%;" />
+</p>
+
+<h2 id="load-add-in-manager-to-revit">Load Add-In Manager to Revit</h2>
+
+<p>To load it into Revit, all you have to do is have a copy of the <em>Add-In Manager</em> folder that you’ll find in the unzipped folder, and be sure that this copy goes to the right version folder of Revit, where you want to install the Add-In Manager. For example, from the SDK version 2022.1, put the copy into the add-in folder named <strong>2022</strong>, which you can find by giving this path to <em>File Explorer</em> in Windows:</p>
+
+<blockquote>
+  <p>%appdata%/autodesk/revit/addins</p>
+</blockquote>
+
+<p>There is last two more steps left: create the link with Revit and create the shortcut for Add-In Manager.</p>
+
+<p>The link to Revit is through an <em>Add-In</em> file <em>(*.addin)</em>, which came with the SDK and can be found within the Add-In Manager folder. For it to work correctly, the path pointing Revit to find the right assembly must be modified before hand.</p>
+
+<p><a href="/assets/img/2021/211228_02_addin-file-original.png"><img src="/assets/img/2021/211228_02_addin-file-original.png" alt="img" /></a></p>
+
+<p>There are three places in the file <em>Autodesk.AddInManager.addin</em>, which is written in <em>xml</em> format, waiting to be modified. If you open the file with <em>Visual Studio Code</em> as I did (shown as picture above), you can find those lines with number <strong>4</strong>, <strong>14</strong> and <strong>24</strong>. These lines are pointing to the location of the assembly <em>Autodesk.AddInManager.Command.dll</em>. I’d recommend that you put the <em>addin</em> file outside of the Add-In Manager folder and point to the location of the assembly with a relative path as the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Assembly&gt;Add-In Manager\Autodesk.AddInManager.Command.dll&lt;/Assembly&gt;
+</code></pre></div></div>
+
+<p>This keep your addin folder organised. For the future addition, you’d have the addins direct in the addin folder and capsulate each of them in separate directories, rather than putting all of them together. It’ll help when you want to update or uninstall a certain addin completely.</p>
+
+<p align="center">
+    <img src="/assets/img/2021/211228_03_addin-folder-structure.png" style="width:80%;" />
+</p>
+
+<h2 id="use-the-add-in-manager">Use the Add-In Manager</h2>
+
+<p>Now we have the Add-In Manager installed. If you start the Revit program, or if you have it open, you’ll be asked for permission to load the Add-In Manager. Once it’s loaded you’ll find three external commands under the <em>Add-Ins</em> tab, on the <em>External</em> panel and within the <em>External Tools</em> pull-down buttom. The difference between them is well-written within their names. The last one <em>ReadOnly Mode</em> is to run your read-only commands, meaning the model will not be modified with transactions. The second one is directly to repeat the last run command from your assembly without showing an interface for you to choose the command again. Of course this means that your assembly is already loaded and ready for use. If not, it will run the first one, also the basic one instead.</p>
+
+<p align="center">
+    <img src="/assets/img/2021/211228_04_interface-addInManager.png" style="width:60%;" />
+</p>
+
+<p>The basic one is the one with the <em>Manual Mode</em>. It shows an interface with all functions within: to load or remove, to show your assemblies and to run your commands. If your assembly is correctly loaded into the manager, you’ll just have to click on the command then hit the <em>Run</em>. If you ran into trouble, just read the reply message and correct your code then compile it again. No open Revit window has to be terminated before you re-run your code. Even if you added (or remove) your commands, just hit <em>load</em> to reload your assembly into the manager - I’d suggest to remove it firsly - you’ll see your change immediately and test your code further without interruption!</p>
+
+<p>Isn’t it amazing!?</p>
+
+<p>Try it out and stay tuned!</p>]]></content><author><name>Ching</name></author><category term="RevitExternalCommand" /><category term="f#," /><category term="revit" /><category term="api" /><summary type="html"><![CDATA[A friend, whom I got to know recently while replying his questions about coding Revit add-ins with F#, brought this question to my attention:]]></summary></entry><entry><title type="html">Find Door Open Direction</title><link href="http://localhost:4000/revitexternalcommand/Find-Door-Open-Direction/" rel="alternate" type="text/html" title="Find Door Open Direction" /><published>2018-12-27T00:00:00+01:00</published><updated>2018-12-27T00:00:00+01:00</updated><id>http://localhost:4000/revitexternalcommand/Find-Door-Open-Direction</id><content type="html" xml:base="http://localhost:4000/revitexternalcommand/Find-Door-Open-Direction/"><![CDATA[<script src="/assets/signup/signup.js"></script>
+
+<signup-component></signup-component>
+
+<p>When using Revit, have you ever ask yourself: How could I know the opening direction of a door? This question emerged while I was working on a project in its execution phase, and it was a huge task to deliver a door list with the full information about all doors – including door opening directions.</p>
+
+<p>While taking on this issue, I have come to three relevant questions: How could one know efficiently, that a door family instance has been flipped by using the flipping handle in the family instance and/or mirrored by using the mirror function? Is there any difference between using flipping handle and the mirror without copy function? How does the mirror function affect the family which has no flipping handles? These questions are probably especially interesting for those who have happened to be the former users of AutoCAD’s blocks, someone like me.</p>
+
+<p>After a few simple tests, many try-and-errors, and some “looking-into”, I might can answer these questions. Let’s begin with questions number two and three, and the answer is that by using mirroring without copy one creates actually a new family instance with new element id whose flipping parameters document in which direction this element is flipped, no matter if this family has flipping handle or not. As to the question number one, it might help at the answer with a code example:</p>
+
+<figure class="highlight"><pre><code class="language-fsharp" data-lang="fsharp"><span class="k">type</span> <span class="nc">FindDoorOpenDirection</span><span class="bp">()</span> <span class="k">as</span> <span class="n">this</span> <span class="p">=</span>
+  <span class="k">interface</span> <span class="nc">IExternalCommand</span> <span class="k">with</span>
+    <span class="k">member</span> <span class="n">x</span><span class="p">.</span><span class="nc">Execute</span><span class="p">(</span><span class="n">cdata</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="n">elset</span><span class="p">)</span> <span class="p">=</span>
+      <span class="k">let</span> <span class="n">uidoc</span> <span class="p">=</span> <span class="n">cdata</span><span class="p">.</span><span class="nn">Application</span><span class="p">.</span><span class="nc">ActiveUIDocument</span>
+      <span class="k">let</span> <span class="n">dir</span> <span class="p">=</span> <span class="nc">Left</span>
+      <span class="k">let</span> <span class="n">selected</span> <span class="p">=</span>
+        <span class="n">uidoc</span><span class="p">.</span><span class="nn">Selection</span><span class="p">.</span><span class="nc">GetElementIds</span><span class="bp">()</span> <span class="p">|&gt;</span> <span class="nn">Seq</span><span class="p">.</span><span class="n">map</span> <span class="n">uidoc</span><span class="p">.</span><span class="nn">Document</span><span class="p">.</span><span class="nc">GetElement</span>
+        <span class="p">|&gt;</span> <span class="nn">Seq</span><span class="p">.</span><span class="n">filter</span><span class="p">(</span>
+          <span class="k">fun</span> <span class="n">s</span> <span class="p">-&gt;</span>
+            <span class="k">match</span> <span class="n">s</span> <span class="k">with</span>
+            <span class="p">|</span> <span class="o">:?</span> <span class="nc">FamilyInstance</span> <span class="p">-&gt;</span> <span class="bp">true</span>
+            <span class="p">|</span> <span class="p">_</span> <span class="p">-&gt;</span> <span class="bp">false</span>
+        <span class="p">)</span> 
+        <span class="p">|&gt;</span> <span class="nn">Seq</span><span class="p">.</span><span class="n">filter</span><span class="p">(</span>
+          <span class="k">fun</span> <span class="n">s</span> <span class="p">-&gt;</span>
+            <span class="k">match</span> <span class="n">s</span><span class="p">.</span><span class="nn">Category</span><span class="p">.</span><span class="nn">Id</span><span class="p">.</span><span class="nc">IntegerValue</span> <span class="k">with</span>
+            <span class="p">|</span> <span class="n">x</span> <span class="k">when</span> <span class="n">x</span> <span class="p">=</span> <span class="kt">int</span> <span class="nn">BuiltInCategory</span><span class="p">.</span><span class="nc">OST_Doors</span> <span class="p">-&gt;</span> <span class="bp">true</span>
+            <span class="p">|</span> <span class="p">_</span> <span class="p">-&gt;</span> <span class="bp">false</span>
+        <span class="p">)</span> <span class="p">|&gt;</span> <span class="nn">List</span><span class="p">.</span><span class="n">ofSeq</span>
+      <span class="k">match</span> <span class="n">selected</span> <span class="k">with</span>
+      <span class="p">|</span> <span class="bp">[]</span> <span class="p">-&gt;</span> <span class="n">msg</span> <span class="p">&lt;-</span> <span class="s2">"Select door(s)"</span><span class="p">;</span> <span class="nn">Result</span><span class="p">.</span><span class="nc">Cancelled</span>
+      <span class="p">|</span> <span class="p">_</span> <span class="p">-&gt;</span>
+        <span class="k">let</span> <span class="n">t</span> <span class="p">=</span> <span class="k">new</span> <span class="nc">Transaction</span><span class="p">(</span><span class="n">uidoc</span><span class="p">.</span><span class="nc">Document</span><span class="p">,</span> <span class="kt">string</span> <span class="n">this</span><span class="p">)</span>
+        <span class="n">t</span><span class="p">.</span><span class="nc">Start</span><span class="bp">()</span> <span class="p">|&gt;</span> <span class="n">ignore</span>
+        <span class="n">selected</span> <span class="p">|&gt;</span> <span class="nn">Seq</span><span class="p">.</span><span class="n">cast</span><span class="p">&lt;</span><span class="nc">FamilyInstance</span><span class="p">&gt;</span>
+        <span class="p">|&gt;</span> <span class="nn">Seq</span><span class="p">.</span><span class="n">map</span><span class="p">(</span>
+          <span class="k">fun</span> <span class="n">dr</span> <span class="p">-&gt;</span>
+            <span class="k">let</span> <span class="n">opendir</span> <span class="p">=</span> 
+              <span class="k">match</span> <span class="n">dr</span><span class="p">.</span><span class="nc">HandFlipped</span><span class="p">,</span> <span class="n">dr</span><span class="p">.</span><span class="nc">FacingFlipped</span> <span class="k">with</span>
+              <span class="p">|</span> <span class="bp">true</span><span class="p">,</span> <span class="bp">true</span> <span class="p">|</span> <span class="bp">false</span><span class="p">,</span> <span class="bp">false</span> <span class="p">-&gt;</span> <span class="n">dir</span>
+              <span class="p">|</span> <span class="o">_,</span> <span class="p">_</span> <span class="p">-&gt;</span> <span class="n">dir</span><span class="p">.</span><span class="n">ops</span>
+            <span class="k">let</span> <span class="n">par</span> <span class="p">=</span> <span class="n">dr</span><span class="p">.</span><span class="n">get_Parameter</span><span class="p">(</span><span class="nn">BuiltInParameter</span><span class="p">.</span><span class="nc">DOOR_NUMBER</span><span class="p">)</span>
+            <span class="n">par</span><span class="p">.</span><span class="nc">Set</span><span class="p">(</span><span class="n">par</span><span class="p">.</span><span class="nc">AsString</span><span class="bp">()</span> <span class="o">+</span> <span class="s2">" | "</span> <span class="o">+</span> <span class="kt">string</span> <span class="n">opendir</span><span class="p">)</span>
+        <span class="p">)</span> <span class="p">|&gt;</span> <span class="nn">List</span><span class="p">.</span><span class="n">ofSeq</span> <span class="p">|&gt;</span> <span class="n">ignore</span>
+        <span class="n">t</span><span class="p">.</span><span class="nc">Commit</span><span class="bp">()</span> <span class="p">|&gt;</span> <span class="n">ignore</span>
+        <span class="nn">Result</span><span class="p">.</span><span class="nc">Succeeded</span></code></pre></figure>
+
+<p>In this example, we see the usual selection filtration (line ), for the type match, each of the selected elements is compared with its type against FamilyInstance, since the door elements are created family elements. However, this includes also the other building elements, such as windows. For specifying the door element filtration, we have to filter the selected with its category against the door category – to be exact, it’s the IntegerValue of the category id that we are comparing here.</p>
+
+<p>Before we determine in which direction a door family instance opens, we have to define, of course, the default situation of the certain family type – since it’s the default situation of the door type to be newly set in the model scene – here we say that the default door family type has been drawn as a left side opened door. To know how the door instance has been mirrored or flipped from its default to its now status, all we need to retrieve are just two of its parameters – HandFlipped and FacingFlipped. (line ) By comparing them with boolean operants, if both of them are true or false at the same time, the door has the same status as the default, and vice versa.</p>
+
+<p>Before I introduce the following handy type, let’s finish the main code at writing the retrieved door open status into its door number parameter additionally. Here it is set that every time when we re-run this code, the the information of door opening direction will be appended to the existing text information in the door number parameter. Surely this is something to be defined according to the project requirement.</p>
+
+<figure class="highlight"><pre><code class="language-fsharp" data-lang="fsharp"><span class="k">type</span> <span class="nc">OpenDirection</span> <span class="p">=</span>
+  <span class="p">|</span> <span class="nc">Left</span>
+  <span class="p">|</span> <span class="nc">Right</span>
+  <span class="k">member</span> <span class="n">x</span><span class="p">.</span><span class="n">ops</span> <span class="p">=</span> 
+    <span class="k">match</span> <span class="n">x</span> <span class="k">with</span>
+    <span class="p">|</span> <span class="nc">Left</span> <span class="p">-&gt;</span> <span class="nc">Right</span>
+    <span class="p">|</span> <span class="nc">Right</span> <span class="p">-&gt;</span> <span class="nc">Left</span></code></pre></figure>
+
+<p>This one handy “discriminated union” type exists for helping me to treat each status of door opening direction as a union case. When we create a value of this type, it can either be “Left” or “Right (these are just tags or case identifier with no sub-type.) It is implemented in the line of our main code and assigned to the value “dir“, which is set as default to the case of Left. “dir” has a function member “ops“, which, when called, will toggle the status of “dir” to the opposite status. (line ) It is used in the line of the main code, while we check the combination of the two kinds of flipping status of a door instance, as explained above.</p>]]></content><author><name>Ching</name></author><category term="RevitExternalCommand" /><category term="f#" /><category term="revit api" /><category term="door" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Efficiently View Room Reference | 有效率地快速顯現與隱藏房間的參考</title><link href="http://localhost:4000/revitexternalcommand/Efficiently-View-Room-Reference/" rel="alternate" type="text/html" title="Efficiently View Room Reference | 有效率地快速顯現與隱藏房間的參考" /><published>2018-12-09T00:00:00+01:00</published><updated>2018-12-09T00:00:00+01:00</updated><id>http://localhost:4000/revitexternalcommand/Efficiently-View-Room-Reference</id><content type="html" xml:base="http://localhost:4000/revitexternalcommand/Efficiently-View-Room-Reference/"><![CDATA[<script src="/assets/signup/signup.js"></script>
+
+<signup-component></signup-component>
+
+<p>Are you tired of repeatedly taping the tab key for selecting hidden room references? And you are doing so because of the applied view template, which you don’t want to switch to none and back, because it will take too long and you’ve got a deadline to make? Then all you’ll need is a efficient way to just quickly switch the visibility of the room reference on and off.</p>
+
+<p>你厭倦了反覆地按同一 tab 鍵只為了選取房間量體的參考十字嗎？而你這麼做只是為了不想把已經設定好的視圖樣版在視圖控制取不取消之間轉換，而浪費寶貴的趕圖時間？若是，你需要的只是一個快速的房間參考顯示轉換機制。</p>
+
+<p>The following code gives you an overview to see how to manipulate the active view by switch the category’s visibility. Surely, it depends on how the status of your currently view setup is. In this short code, we have two scenarios, with or without view template, as examples.</p>
+
+<p>下面的編碼將給你一個概念，我們可以如何利用品類的顯示與否來控制當下視圖。當然，這是視你當下視圖的預設設定而定。在此簡短的編碼中，我們可先設定兩個預定情況，已設或未設視圖樣版，當作示範。</p>
+
+<figure class="highlight"><pre><code class="language-fsharp" data-lang="fsharp"><span class="k">type</span> <span class="nc">ViewRoomReference</span><span class="bp">()</span> <span class="k">as</span> <span class="n">this</span> <span class="p">=</span> 
+  <span class="k">interface</span> <span class="nc">IExternalCommand</span> <span class="k">with</span>
+    <span class="k">member</span> <span class="n">x</span><span class="p">.</span><span class="nc">Execute</span><span class="p">(</span><span class="n">cdata</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="n">elset</span><span class="p">)</span> <span class="p">=</span>
+      <span class="k">let</span> <span class="n">uidoc</span> <span class="p">=</span> <span class="n">cdata</span><span class="p">.</span><span class="nn">Application</span><span class="p">.</span><span class="nc">ActiveUIDocument</span>        
+      <span class="k">let</span> <span class="n">catRoom</span> <span class="p">=</span> 
+        <span class="n">uidoc</span><span class="p">.</span><span class="nn">Document</span><span class="p">.</span><span class="nn">Settings</span><span class="p">.</span><span class="nc">Categories</span>
+        <span class="p">|&gt;</span> <span class="nn">Seq</span><span class="p">.</span><span class="n">cast</span><span class="p">&lt;</span><span class="nc">Category</span><span class="p">&gt;</span>
+        <span class="p">|&gt;</span> <span class="nn">Seq</span><span class="p">.</span><span class="n">filter</span><span class="p">(</span><span class="k">fun</span> <span class="n">cat</span> <span class="p">-&gt;</span> <span class="n">cat</span><span class="p">.</span><span class="nc">Name</span> <span class="p">=</span> <span class="s2">"Rooms"</span><span class="p">)</span>
+        <span class="p">|&gt;</span> <span class="nn">Seq</span><span class="p">.</span><span class="n">head</span>
+      <span class="k">let</span> <span class="n">subcats</span> <span class="p">=</span>
+        <span class="n">catRoom</span><span class="p">.</span><span class="nc">SubCategories</span> <span class="p">|&gt;</span> <span class="nn">Seq</span><span class="p">.</span><span class="n">cast</span><span class="p">&lt;</span><span class="nc">Category</span><span class="p">&gt;</span>
+        <span class="p">|&gt;</span> <span class="nn">Seq</span><span class="p">.</span><span class="n">filter</span><span class="p">(</span>
+          <span class="k">fun</span> <span class="n">subcat</span> <span class="p">-&gt;</span>
+            <span class="n">subcat</span><span class="p">.</span><span class="nc">Name</span> <span class="p">=</span> <span class="s2">"Reference"</span> <span class="o">||</span>
+            <span class="n">subcat</span><span class="p">.</span><span class="nc">Name</span> <span class="p">=</span> <span class="s2">"Interior Fill"</span>
+        <span class="p">)</span>
+      <span class="k">match</span> <span class="n">uidoc</span><span class="p">.</span><span class="nc">ActiveView</span> <span class="k">with</span>
+      <span class="p">|</span> <span class="o">:?</span> <span class="nc">View3D</span> <span class="p">-&gt;</span>
+        <span class="n">msg</span> <span class="p">&lt;-</span> <span class="s2">"3D View"</span>
+        <span class="nn">Result</span><span class="p">.</span><span class="nc">Cancelled</span>
+      <span class="p">|</span> <span class="p">_</span> <span class="p">-&gt;</span>
+        <span class="k">let</span> <span class="n">catAll</span> <span class="p">=</span> <span class="p">[</span><span class="n">catRoom</span><span class="p">]</span> <span class="o">@</span> <span class="p">(</span><span class="n">subcats</span> <span class="p">|&gt;</span> <span class="nn">List</span><span class="p">.</span><span class="n">ofSeq</span><span class="p">)</span>
+        <span class="k">let</span> <span class="n">isStat</span> <span class="p">=</span> <span class="n">catAll</span> <span class="p">|&gt;</span> <span class="nn">List</span><span class="p">.</span><span class="n">map</span><span class="p">(</span><span class="k">fun</span> <span class="n">cat</span> <span class="p">-&gt;</span> <span class="n">uidoc</span><span class="p">.</span><span class="nn">ActiveView</span><span class="p">.</span><span class="nc">GetCategoryHidden</span><span class="p">(</span><span class="n">cat</span><span class="p">.</span><span class="nc">Id</span><span class="o">))</span>
+        <span class="k">let</span> <span class="n">toggle</span><span class="bp">()</span> <span class="p">=</span>
+          <span class="k">match</span> <span class="n">isStat</span> <span class="k">with</span>
+          <span class="p">|</span> <span class="p">[</span><span class="bp">false</span><span class="p">;</span> <span class="bp">false</span><span class="p">;</span> <span class="bp">false</span><span class="p">]</span> <span class="p">-&gt;</span>
+            <span class="n">catAll</span> 
+            <span class="p">|&gt;</span> <span class="nn">List</span><span class="p">.</span><span class="n">iter</span><span class="p">(</span><span class="k">fun</span> <span class="n">cat</span> <span class="p">-&gt;</span> <span class="n">uidoc</span><span class="p">.</span><span class="nn">ActiveView</span><span class="p">.</span><span class="nc">SetCategoryHidden</span><span class="p">(</span><span class="n">cat</span><span class="p">.</span><span class="nc">Id</span><span class="p">,</span> <span class="bp">true</span><span class="o">))</span>
+          <span class="p">|</span> <span class="p">_</span> <span class="p">-&gt;</span>
+            <span class="n">catAll</span> 
+            <span class="p">|&gt;</span> <span class="nn">List</span><span class="p">.</span><span class="n">iter</span><span class="p">(</span><span class="k">fun</span> <span class="n">cat</span> <span class="p">-&gt;</span> <span class="n">uidoc</span><span class="p">.</span><span class="nn">ActiveView</span><span class="p">.</span><span class="nc">SetCategoryHidden</span><span class="p">(</span><span class="n">cat</span><span class="p">.</span><span class="nc">Id</span><span class="p">,</span> <span class="bp">false</span><span class="o">))</span>
+        <span class="k">let</span> <span class="n">t</span> <span class="p">=</span> <span class="k">new</span> <span class="nc">Transaction</span><span class="p">(</span><span class="n">uidoc</span><span class="p">.</span><span class="nc">Document</span><span class="p">,</span> <span class="kt">string</span> <span class="n">this</span><span class="p">)</span>
+        <span class="n">t</span><span class="p">.</span><span class="nc">Start</span><span class="bp">()</span> <span class="p">|&gt;</span> <span class="n">ignore</span>
+        <span class="k">match</span> <span class="n">uidoc</span><span class="p">.</span><span class="nn">ActiveView</span><span class="p">.</span><span class="nc">ViewTemplateId</span> <span class="k">with</span>
+        <span class="p">|</span> <span class="n">x</span> <span class="k">when</span> <span class="n">x</span> <span class="p">=</span> <span class="nn">ElementId</span><span class="p">.</span><span class="nc">InvalidElementId</span> <span class="p">-&gt;</span>
+          <span class="n">toggle</span><span class="bp">()</span>
+        <span class="p">|</span> <span class="p">_</span> <span class="p">-&gt;</span>
+          <span class="k">match</span> <span class="n">uidoc</span><span class="p">.</span><span class="nn">ActiveView</span><span class="p">.</span><span class="nc">IsTemporaryViewPropertiesModeEnabled</span><span class="bp">()</span> <span class="k">with</span>
+          <span class="p">|</span> <span class="bp">true</span> <span class="p">-&gt;</span>
+            <span class="n">uidoc</span><span class="p">.</span><span class="nn">ActiveView</span><span class="p">.</span><span class="nc">DisableTemporaryViewMode</span><span class="p">(</span>
+              <span class="nn">TemporaryViewMode</span><span class="p">.</span><span class="nc">TemporaryViewProperties</span>
+              <span class="p">)</span>
+          <span class="p">|</span> <span class="bp">false</span> <span class="p">-&gt;</span>
+            <span class="n">uidoc</span><span class="p">.</span><span class="nn">ActiveView</span><span class="p">.</span><span class="nc">EnableTemporaryViewPropertiesMode</span><span class="p">(</span>
+              <span class="n">uidoc</span><span class="p">.</span><span class="nn">ActiveView</span><span class="p">.</span><span class="nc">ViewTemplateId</span>
+              <span class="p">)</span> <span class="p">|&gt;</span> <span class="n">ignore</span>
+            <span class="n">toggle</span><span class="bp">()</span>                       
+        <span class="n">t</span><span class="p">.</span><span class="nc">Commit</span><span class="bp">()</span> <span class="p">|&gt;</span> <span class="n">ignore</span>
+        <span class="nn">Result</span><span class="p">.</span><span class="nc">Succeeded</span></code></pre></figure>
+
+<p>Our goal is to turn on the visibility of the room category in active view, and its sub-categories “interior fill” and “reference” as well, so that we can easily recognize where the room reference points are and select the room body which we want. If the active view is not under the control of a view template, it’s simple to turn on and off the categories related to rooms. However, even if it is, we can still set the view under the “temporary view properties” mode, and toggle the visibility of the room categories.</p>
+
+<p>我們的目標，是在當下的視圖中，快速地顯示或隱藏房間品類與其下《内部填滿》和《參考》的兩個次品類；而藉此，我們可容易地辨識房間的參考點在何處，進而選取我們要的房間量體，以達有效率地進行編輯。如果現下的視圖並未被試圖樣板控制，開啟或關閉與房間相關的品類是相當簡單的。若被控制，我們還是可將視圖設於暫時視圖性質模式之下，再進行房間品類的顯示編輯。</p>
+
+<p>Of course, according to different workflows or office standards, the process can be customized according to the needs. The most important is, take your time to discover your own efficient way in Revit modeling.</p>
+
+<p>當然，這是視各個不同的工作方式與公司案件標準而定。這個進程是可視不同需要，而量身定作的。重點是，我們應當利用一點時間，你可以發掘屬於自己最有效率的建模方式。</p>]]></content><author><name>Ching</name></author><category term="RevitExternalCommand" /><category term="f#" /><category term="revit api" /><category term="room" /><category term="view" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Summed Length of Linear Element | 線型元件的長度總和</title><link href="http://localhost:4000/revitexternalcommand/Summed-Length-of-Linear-Element/" rel="alternate" type="text/html" title="Summed Length of Linear Element | 線型元件的長度總和" /><published>2018-11-20T00:00:00+01:00</published><updated>2018-11-20T00:00:00+01:00</updated><id>http://localhost:4000/revitexternalcommand/Summed-Length-of-Linear-Element</id><content type="html" xml:base="http://localhost:4000/revitexternalcommand/Summed-Length-of-Linear-Element/"><![CDATA[<script src="/assets/signup/signup.js"></script>
+
+<signup-component></signup-component>
+
+<p>還記得我們上一回的文章中，我們探討了如何取得線段長總和，還有以相似的方法取得空間的面積總和？我們也在上述的第二篇中，加入了自動依照案件的長度單位，換算成符合的面積單位。</p>
+
+<p>Remember in the last post, where we discussed about how we retrieve the summed length of curve elements? After that post, we had a similar one, where the summed value is the retrieved area of room instead of length? And we also had a improved function, with which the report of value is determined automatically according to the current project unit.</p>
+
+<p>在本篇中，我們更利用從 F# 中相當方便的功能，將上述的程式作改變與加強。我們將取得 “線型元件”的總長度，例如在此範例中，曲線元件、牆面與樑架構元件的長度總和。</p>
+
+<p>Now, in this post, we are also going to do some improvement, by using some of the convenient F# functions. We are going to retrieve the summed length of linear elements, such as, in this example, we combined the length of curve elements, wall and structural framing elements.</p>
+
+<figure class="highlight"><pre><code class="language-fsharp" data-lang="fsharp"><span class="k">type</span> <span class="nc">FindSumLengthOfLinearElement</span><span class="bp">()</span> <span class="k">as</span> <span class="n">this</span> <span class="p">=</span> 
+  <span class="k">interface</span> <span class="nc">IExternalCommand</span> <span class="k">with</span>
+    <span class="k">member</span> <span class="n">x</span><span class="p">.</span><span class="nc">Execute</span><span class="p">(</span><span class="n">cdata</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="n">elset</span><span class="p">)</span> <span class="p">=</span>
+      <span class="k">let</span> <span class="n">uidoc</span> <span class="p">=</span> <span class="n">cdata</span><span class="p">.</span><span class="nn">Application</span><span class="p">.</span><span class="nc">ActiveUIDocument</span>
+      <span class="k">let</span> <span class="n">selected</span> <span class="p">=</span>
+        <span class="n">uidoc</span><span class="p">.</span><span class="nn">Selection</span><span class="p">.</span><span class="nc">GetElementIds</span><span class="bp">()</span> 
+        <span class="p">|&gt;</span> <span class="nn">Seq</span><span class="p">.</span><span class="n">map</span> <span class="n">uidoc</span><span class="p">.</span><span class="nn">Document</span><span class="p">.</span><span class="nc">GetElement</span>
+        <span class="p">|&gt;</span> <span class="nn">Seq</span><span class="p">.</span><span class="n">map</span><span class="p">(</span>
+          <span class="k">fun</span> <span class="n">e</span> <span class="p">-&gt;</span>
+            <span class="k">match</span> <span class="n">e</span> <span class="k">with</span>
+            <span class="p">|</span> <span class="o">:?</span> <span class="nc">CurveElement</span> <span class="k">as</span> <span class="n">ce</span> <span class="p">-&gt;</span> <span class="nc">Some</span> <span class="n">ce</span><span class="p">.</span><span class="nc">GeometryCurve</span>
+            <span class="p">|</span> <span class="o">:?</span> <span class="nc">Wall</span> <span class="k">as</span> <span class="n">w</span> <span class="p">-&gt;</span> <span class="nc">Some</span> <span class="p">(</span><span class="n">w</span><span class="p">.</span><span class="nc">Location</span><span class="o">:?&gt;</span><span class="nc">LocationCurve</span><span class="o">).</span><span class="nc">Curve</span>
+            <span class="p">|</span> <span class="o">:?</span> <span class="nc">FamilyInstance</span> <span class="k">as</span> <span class="n">fi</span> <span class="p">-&gt;</span>
+              <span class="k">match</span> <span class="n">fi</span><span class="p">.</span><span class="nn">Category</span><span class="p">.</span><span class="nn">Id</span><span class="p">.</span><span class="nc">IntegerValue</span> <span class="k">with</span>
+              <span class="p">|</span> <span class="n">x</span> <span class="k">when</span> <span class="n">x</span> <span class="p">=</span> <span class="kt">int</span> <span class="nn">BuiltInCategory</span><span class="p">.</span><span class="nc">OST_StructuralFraming</span> <span class="p">-&gt;</span> 
+                <span class="nc">Some</span> <span class="p">(</span><span class="n">fi</span><span class="p">.</span><span class="nc">Location</span><span class="o">:?&gt;</span><span class="nc">LocationCurve</span><span class="o">).</span><span class="nc">Curve</span>
+              <span class="p">|</span> <span class="p">_</span> <span class="p">-&gt;</span> <span class="nc">None</span>
+            <span class="p">|</span> <span class="p">_</span> <span class="p">-&gt;</span> <span class="nc">None</span>
+        <span class="p">)</span>
+        <span class="p">|&gt;</span> <span class="nn">Seq</span><span class="p">.</span><span class="n">filter</span><span class="p">(</span>
+          <span class="k">fun</span> <span class="n">opt</span> <span class="p">-&gt;</span> <span class="n">opt</span><span class="p">.</span><span class="nc">IsSome</span>
+        <span class="p">)</span> <span class="p">|&gt;</span> <span class="nn">List</span><span class="p">.</span><span class="n">ofSeq</span>
+      <span class="k">match</span> <span class="n">selected</span> <span class="k">with</span>
+      <span class="p">|</span> <span class="bp">[]</span> <span class="p">-&gt;</span> 
+        <span class="n">msg</span> <span class="p">&lt;-</span> <span class="s2">"Select line(s) / Wall(s)."</span>
+        <span class="nn">Result</span><span class="p">.</span><span class="nc">Cancelled</span>
+      <span class="p">|</span> <span class="p">_</span> <span class="p">-&gt;</span>
+        <span class="k">let</span> <span class="n">unitlen</span> <span class="p">=</span>
+          <span class="n">selected</span>
+          <span class="p">|&gt;</span> <span class="nn">List</span><span class="p">.</span><span class="n">map</span><span class="p">(</span><span class="k">fun</span> <span class="n">opt</span> <span class="p">-&gt;</span> <span class="n">opt</span><span class="p">.</span><span class="nn">Value</span><span class="p">.</span><span class="nc">Length</span><span class="p">)</span>
+          <span class="p">|&gt;</span> <span class="nn">List</span><span class="p">.</span><span class="n">sum</span>
+          <span class="p">|&gt;</span> <span class="n">fsMath</span><span class="p">.</span><span class="n">toCurrentUnits</span> <span class="n">uidoc</span><span class="p">.</span><span class="nc">Document</span> <span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
+        <span class="k">let</span> <span class="n">txt</span> <span class="p">=</span>
+          <span class="k">let</span> <span class="n">uSys</span><span class="p">,</span> <span class="n">sum</span> <span class="p">=</span> <span class="n">unitlen</span>
+          <span class="k">match</span> <span class="n">uSys</span> <span class="k">with</span>
+          <span class="p">|</span> <span class="n">fsMath</span><span class="p">.</span><span class="nc">Metric</span> <span class="p">-&gt;</span>
+            <span class="n">sum</span> <span class="p">|&gt;</span> <span class="n">fsMath</span><span class="p">.</span><span class="n">toRoundUp</span> <span class="mi">4</span><span class="p">.</span><span class="mi">0</span> <span class="p">|&gt;</span> <span class="kt">string</span> <span class="p">|&gt;</span> <span class="k">fun</span> <span class="n">x</span> <span class="p">-&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="s2">" m"</span>
+          <span class="p">|</span> <span class="n">fsMath</span><span class="p">.</span><span class="nc">Imperial</span> <span class="p">-&gt;</span>
+            <span class="n">sum</span> <span class="p">|&gt;</span> <span class="n">fsMath</span><span class="p">.</span><span class="n">toRoundUp</span> <span class="mi">4</span><span class="p">.</span><span class="mi">0</span> <span class="p">|&gt;</span> <span class="kt">string</span> <span class="p">|&gt;</span> <span class="k">fun</span> <span class="n">x</span> <span class="p">-&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="s2">" ft"</span>
+        <span class="nn">TaskDialog</span><span class="p">.</span><span class="nc">Show</span><span class="p">(</span><span class="kt">string</span> <span class="n">this</span><span class="p">,</span> <span class="kt">string</span> <span class="n">txt</span><span class="p">)</span> <span class="p">|&gt;</span> <span class="n">ignore</span>
+        <span class="nn">Result</span><span class="p">.</span><span class="nc">Succeeded</span></code></pre></figure>
+
+<p>如同上面的編碼所展現的，這其實是與取得曲線線長總和的程式非常相似。但不同之處在於，如何確認何種物件應當被選取（14行）。在此步驟，不同於之前在直接求線長程式中的過濾 （filter）功能，我們使用序列（Seq）的映射（map）功能。此功能將輸入的物件映射於它們的代表曲線作為輸出，而這取決於我們要選出的類型：第一與第二兩類，也就是曲線元件與牆體（16、17 行）。這一功能將映射出一包含其幾何曲線的 Some 物件 –  Some 屬於在 F# 語言中的選擇權 Option 性質物件。而其所包含的曲線，即為從曲線物件中取得的幾何曲線（GeometryCurve）或從牆體所得的地點曲線（LocationCurve）。或是第三類，結構框架（StructuralFraming）。這一類將經由下列方式被決定：第一，物件是否屬於家族物件（FamilyInstance） ，然後再由其品類決定它是否是結構框架。最後，在此映射的程式中，因為 F# 是一 “type safe“的程式語言，就算輸入的物件不符合上述的任一類別，我們還是必須要與以 Some 物件同類的輸出。而此時，這程式將以另一同 Option 的物件回應：None。在接下來的選取過程中，我們將可在選項物件上用 “Seq.filter” 直接過濾出那些含有 ”IsSome“ 即是我們要的：曲線，在此一曲線中，將含有線型物件長度的屬性。</p>
+
+<p>As here demonstrated, it is quite similar to the code for the summed length of curve elements. However, it is different at the part, determining which kind of elements are supposed to be selected (line 14). In this step, we use, instead of the “filter“, we use the “map” function of Seq. This function maps the elements to their representative curves according to our chosen types: If the element is, of the first and second types, i.e. of Curve Element or Wall types (line 16, 17), the function returns a “Some“, an F# Option instance, with a value of Curve, which is retrieved from the element’s GeometryCurve or LocationCurve properties, respectively. Or it is of the third type, StructuralFraming, which is being determined by, firstly, if the element is a FamilyInstance, then, secondly,  if its category is StructuralFraming. Finally in this mapping function, since F# is a “type safe” language, if none of these three types is matched, we still have to have the same type as Some returned, the function will return another Option instance: None. In the following selection process, we can then filter out what we want – the curves, which have the length of the linear elements, by using “Seq.filter” on the option objects, if its “IsSome” property is true.</p>
+
+<p>至此，若不論那被過濾和選取後的物件還仍不是曲線，此程式已接近完成。我們要等待曲線還仍被包裹在屬於 “Option” 類的 “Some” 的物件中。但擷取它們只需要呼喚出在 ”Some“ 中的 ”Value“ 屬性，而長度正是此 ”Value“（也就是 Curve） 的眾多屬性之一（35行）。</p>
+
+<p>Until this point, this code is almost completed, except that the filtered and selected elements are not curves yet. They are still “packed” in the Some instance of the Option type. But to get them is just simply by calling the Value property of Some, and the Length is directly an property of this Value, i.e. the Curve (line 35).</p>]]></content><author><name>Ching</name></author><category term="RevitExternalCommand" /><category term="f#" /><category term="revit api" /><category term="length" /><category term="element" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Rhino Plug-in with F# | 用F#寫Rhino外掛程式</title><link href="http://localhost:4000/rhino/plug-in/Rhino-Plug-in-with-FSharp/" rel="alternate" type="text/html" title="Rhino Plug-in with F# | 用F#寫Rhino外掛程式" /><published>2018-11-14T00:00:00+01:00</published><updated>2018-11-14T00:00:00+01:00</updated><id>http://localhost:4000/rhino/plug-in/Rhino-Plug-in-with-FSharp</id><content type="html" xml:base="http://localhost:4000/rhino/plug-in/Rhino-Plug-in-with-FSharp/"><![CDATA[<script src="/assets/signup/signup.js"></script>
+
+<signup-component></signup-component>
+
+<p>A few years back, when I was writing my thesis, titled “Permeation”, about philosophy, architectural geometry and programming, RhinoCommon, Grasshopper and Python were the great helpers to bring my ideas into the light. Since then, they are essential parts for my work along with Revit. When F# came to my life, it brought my understanding of programming further into a broader view and another level.</p>
+
+<blockquote>
+  <p>F# is a mature, open source, cross-platform, functional-first programming language. It empowers users and organizations to tackle complex computing problems with simple, maintainable and robust code. -<a href="http://fsharp.org">F# Software Foundation</a></p>
+</blockquote>
+
+<p>Parallel to introductions about writing external commands for Revit with Revit API in F# or Python, I’d like to share writing commands for Rhino with RhinoCommon in both languages as well.</p>
+
+<p>Let’s start with adapting a Python code example from the Rhino Developer Docs samples: Custom Getpoint. We will build a dynamic-link library (.dll) as plug-in for the newest version Rhino 6, with its RhinoCommon.dll and Rhino.UI.dll as References. For building an dll file, we can use Visual Studio Community as coding environment, and you can find a similar post about setting it up. However, the difference is just instead of references from Revit, we’ll have to use the ones from Rhino 6.</p>
+
+<figure class="highlight"><pre><code class="language-sharp" data-lang="sharp">namespace TYB.RHN.DOES
+type PlugIn() =
+  class
+    inherit Rhino.PlugIns.PlugIn()
+  end</code></pre></figure>
+
+<p>Just like coding with Revit API – as mentioned in this previous post, we have to set the TransactionAttribute and using IExternalCommand interface for each external command – and here we’ll have to write, for RhinoCommon, at least, two types with similar setups – first, a type inheriting PlugIn as base class (code above) and, second, a type inheriting Command as base class (code below). We can have many of the types that inherit Command class, but we must have one type which inherits the PlugIn class within one project, i. e.  within one dynamic-link library (.dll) file.</p>
+
+<figure class="highlight"><pre><code class="language-fsharp" data-lang="fsharp"><span class="k">namespace</span> <span class="nn">TYB</span><span class="p">.</span><span class="nn">RHN</span><span class="p">.</span><span class="nc">Does</span>
+<span class="k">open</span> <span class="nc">Rhino</span>
+<span class="k">open</span> <span class="nn">Rhino</span><span class="p">.</span><span class="nc">Geometry</span>
+<span class="k">open</span> <span class="nn">Rhino</span><span class="p">.</span><span class="nc">Input</span>
+<span class="k">type</span> <span class="nc">DrawDynamicLines</span><span class="bp">()</span> <span class="k">as</span> <span class="n">this</span> <span class="p">=</span>
+  <span class="k">inherit</span> <span class="nn">Rhino</span><span class="p">.</span><span class="nn">Commands</span><span class="p">.</span><span class="nc">Command</span><span class="bp">()</span>
+  <span class="k">override</span> <span class="n">x</span><span class="p">.</span><span class="nc">EnglishName</span> <span class="p">=</span> <span class="kt">string</span> <span class="n">this</span>
+  <span class="k">override</span> <span class="n">x</span><span class="p">.</span><span class="nc">RunCommand</span><span class="p">(</span><span class="n">doc</span><span class="p">,</span> <span class="n">mode</span><span class="p">)</span> <span class="p">=</span>
+    <span class="nn">RhinoApp</span><span class="p">.</span><span class="nc">WriteLine</span><span class="p">(</span><span class="kt">string</span> <span class="n">this</span><span class="p">)</span>
+    <span class="k">let</span> <span class="n">gp0</span> <span class="p">=</span> <span class="nn">RhinoGet</span><span class="p">.</span><span class="nc">GetPoint</span><span class="p">(</span><span class="s2">"Pick a point"</span><span class="p">,</span> <span class="bp">false</span><span class="p">)</span>
+    <span class="k">let</span> <span class="n">gp1</span> <span class="p">=</span> <span class="nn">RhinoGet</span><span class="p">.</span><span class="nc">GetPoint</span><span class="p">(</span><span class="s2">"Pick 2nd point"</span><span class="p">,</span> <span class="bp">true</span><span class="p">)</span>
+    <span class="k">let</span> <span class="n">points</span> <span class="p">=</span>
+      <span class="k">match</span> <span class="n">gp0</span><span class="p">,</span> <span class="n">gp1</span> <span class="k">with</span>
+      <span class="p">|</span> <span class="o">(_,</span> <span class="n">pt0</span><span class="o">),</span> <span class="o">(_,</span> <span class="n">pt1</span><span class="p">)</span> <span class="p">-&gt;</span>
+        <span class="p">[</span><span class="n">pt0</span><span class="p">;</span> <span class="n">pt1</span><span class="p">]</span>
+    <span class="k">let</span> <span class="n">gp2</span> <span class="p">=</span> <span class="k">new</span> <span class="nn">Rhino</span><span class="p">.</span><span class="nn">Input</span><span class="p">.</span><span class="nn">Custom</span><span class="p">.</span><span class="nc">GetPoint</span><span class="bp">()</span>
+    <span class="n">gp2</span><span class="p">.</span><span class="nn">DynamicDraw</span><span class="p">.</span><span class="nc">Add</span><span class="p">(</span>
+      <span class="k">fun</span> <span class="n">arg</span> <span class="p">-&gt;</span>
+        <span class="n">arg</span><span class="p">.</span><span class="nn">Display</span><span class="p">.</span><span class="nc">DrawLine</span><span class="p">(</span><span class="n">points</span><span class="o">.[</span><span class="mi">0</span><span class="o">],</span> <span class="n">arg</span><span class="p">.</span><span class="nc">CurrentPoint</span><span class="p">,</span> <span class="nn">System</span><span class="p">.</span><span class="nn">Drawing</span><span class="p">.</span><span class="nn">Color</span><span class="p">.</span><span class="nc">AliceBlue</span><span class="p">)</span>
+        <span class="n">arg</span><span class="p">.</span><span class="nn">Display</span><span class="p">.</span><span class="nc">DrawLine</span><span class="p">(</span><span class="n">points</span><span class="o">.[</span><span class="mi">1</span><span class="o">],</span> <span class="n">arg</span><span class="p">.</span><span class="nc">CurrentPoint</span><span class="p">,</span> <span class="nn">System</span><span class="p">.</span><span class="nn">Drawing</span><span class="p">.</span><span class="nn">Color</span><span class="p">.</span><span class="nc">HotPink</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">gp2</span><span class="p">.</span><span class="nc">Get</span><span class="bp">()</span>
+    <span class="n">doc</span><span class="p">.</span><span class="nn">Views</span><span class="p">.</span><span class="nc">Redraw</span><span class="bp">()</span>
+    <span class="nn">Commands</span><span class="p">.</span><span class="nn">Result</span><span class="p">.</span><span class="nc">Success</span> </code></pre></figure>
+
+<p>Just as I felt, as I slowly learnt how to write in F# with the understanding of Python, translating from Python code to F# is easy. The most different part might be to declare a type, to inherit a class and override the name of this command and the RunCommand() method. Since I didn’t have to do those. If you’re using Python editor or writing Python script in Grasshopper, these processes are not necessary, since these are already taken care of.</p>
+
+<p>The process of this code is clear and similar to the one in Python. By overriding the EnglishName, we can set the name of this command to be called in Rhino command line and under RunCommand we implement what this code is actually doing. By using RhinoGet, the user enter the two points on screen and the third one we set for the CurrentPoint, where your mouse cursor is located, from the event argument of DynamicDraw event.</p>
+
+<p>Finally, build this solution in Visual Studio, you’ll have a dynamic-link library file (.dll). In Rhino 6 under Option » Plug-in, you can import this command and call it from the command line.</p>]]></content><author><name>Ching</name></author><category term="Rhino" /><category term="Plug-in" /><category term="f#" /><category term="rhinocommon" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Compiling Python Code as External Command | 裝載 Python 編碼成 Revit 外部程式</title><link href="http://localhost:4000/revitexternalcommand/Compiling-Python-Code-as-External-Command/" rel="alternate" type="text/html" title="Compiling Python Code as External Command | 裝載 Python 編碼成 Revit 外部程式" /><published>2018-11-10T00:00:00+01:00</published><updated>2018-11-10T00:00:00+01:00</updated><id>http://localhost:4000/revitexternalcommand/Compiling-Python-Code-as-External-Command</id><content type="html" xml:base="http://localhost:4000/revitexternalcommand/Compiling-Python-Code-as-External-Command/"><![CDATA[<script src="/assets/signup/signup.js"></script>
+
+<signup-component></signup-component>
+
+<p>A couple years back, when I started to use Revit and Revit API with my limited Python knowledge from using RhinoCommon for my Master thesis, I’ve got to contact with two very useful external applications – pyRevit and RevitPythonShell. Many thanks to their creators – Ehsan Iran-Nejad and Daren Thomas, respectively, and also thanks to those bloggers (among them – The Building Coder from Jeremy Tammik) who give numerous insights, and uncountable replies on Stack Overflow to those questions of problems which I happened also to encounter, I have since learnt and written many Python codes in my free time and use them daily at work. Furthermore, because of these experiences I can now write the stand-alone external commands and applications for Revit with F#.</p>
+
+<p>幾年前，當我剛開始使用 Revit，用我當時寫論文時，從使用 Python 與 RhinoCommon 的經驗來使用 Revit API 時，我接觸到兩個非常有用的外部程式：pyRevit 和 RevitPythonShell。感謝此兩程式的作者：Ehsan Iran-Nejad 和 Daren Thomas；也感謝那些給予深刻經驗的許多部落格作者（其中，Jeremy Tammik 的 The Building Coder），還有許許多多在 Stack Overflow 的問題解答，而也解答了我在當時有的相關疑惑。從那時起，我學習了許多，也在閒暇之餘寫了很多之後在工作上很有效率的工具。此外，也因為這些經驗，我才能用 F# 寫出許多外部指令與程式。</p>
+
+<p>Recently, I have done a little research,  took these two programs from above as references and wrote a simple Python code loader in F#, which loads a Python script into Revit as an external command, combining with IronPython.</p>
+
+<p>最近，作了一些搜尋，參考此二程式，也用 F# 寫出了一個簡單的 Python 編碼裝載器。此一，裝載了 Python 的編碼，結合 IronPython 以一外部指令進入 Revit 的軟件環境中。</p>
+
+<figure class="highlight"><pre><code class="language-fsharp" data-lang="fsharp"><span class="k">open</span> <span class="nn">IronPython</span><span class="p">.</span><span class="nc">Compiler</span>
+<span class="k">module</span> <span class="n">loadPythonScript</span> <span class="p">=</span>
+  <span class="k">let</span> <span class="n">loader</span><span class="p">(</span><span class="n">cdata</span><span class="p">:</span><span class="nc">ExternalCommandData</span><span class="o">)(</span><span class="n">pth</span><span class="p">:</span><span class="kt">string</span><span class="p">)</span> <span class="p">=</span>
+    <span class="k">let</span> <span class="n">lst</span> <span class="p">=</span> <span class="o">[(</span><span class="s2">"Frames"</span><span class="p">,</span> <span class="bp">true</span><span class="p">:&gt;</span><span class="n">obj</span><span class="o">);</span> <span class="p">(</span><span class="s2">"FullFrames"</span><span class="p">,</span> <span class="bp">true</span><span class="p">:&gt;</span><span class="n">obj</span><span class="o">);</span> <span class="p">(</span><span class="s2">"LightweightScoped"</span><span class="p">,</span> <span class="bp">true</span><span class="p">:&gt;</span><span class="n">obj</span><span class="o">)]</span>
+    <span class="k">let</span> <span class="n">dic</span> <span class="p">=</span> <span class="nn">Seq</span><span class="p">.</span><span class="n">ofList</span> <span class="n">lst</span> <span class="p">|&gt;</span> <span class="n">dict</span>
+
+    <span class="c1">// IronPython Engine</span>
+    <span class="k">let</span> <span class="n">engine</span> <span class="p">=</span> <span class="nn">IronPython</span><span class="p">.</span><span class="nn">Hosting</span><span class="p">.</span><span class="nn">Python</span><span class="p">.</span><span class="nc">CreateEngine</span><span class="p">(</span><span class="n">options</span> <span class="p">=</span> <span class="n">dic</span><span class="p">)</span>
+    <span class="n">engine</span><span class="p">.</span><span class="nn">Runtime</span><span class="p">.</span><span class="nc">LoadAssembly</span><span class="p">(</span><span class="n">typeof</span><span class="p">&lt;</span><span class="nn">Autodesk</span><span class="p">.</span><span class="nn">Revit</span><span class="p">.</span><span class="nn">DB</span><span class="p">.</span><span class="nc">Document</span><span class="o">&gt;.</span><span class="nc">Assembly</span><span class="p">)</span>
+    <span class="n">engine</span><span class="p">.</span><span class="nn">Runtime</span><span class="p">.</span><span class="nc">LoadAssembly</span><span class="p">(</span><span class="n">typeof</span><span class="p">&lt;</span><span class="nn">Autodesk</span><span class="p">.</span><span class="nn">Revit</span><span class="p">.</span><span class="nn">UI</span><span class="p">.</span><span class="nc">Result</span><span class="o">&gt;.</span><span class="nc">Assembly</span><span class="p">)</span>
+
+    <span class="c1">// Builtin Module</span>
+    <span class="k">let</span> <span class="n">mdlBuiltin</span> <span class="p">=</span> <span class="nn">IronPython</span><span class="p">.</span><span class="nn">Hosting</span><span class="p">.</span><span class="nn">Python</span><span class="p">.</span><span class="nc">GetBuiltinModule</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span>
+    <span class="n">mdlBuiltin</span><span class="p">.</span><span class="nc">SetVariable</span><span class="p">(</span><span class="s2">"uiapp"</span><span class="p">,</span> <span class="n">cdata</span><span class="p">.</span><span class="nc">Application</span><span class="p">)</span>
+    <span class="n">mdlBuiltin</span><span class="p">.</span><span class="nc">SetVariable</span><span class="p">(</span><span class="s2">"__window__"</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+    <span class="c1">// Scope</span>
+    <span class="k">let</span> <span class="n">scope</span> <span class="p">=</span> <span class="nn">IronPython</span><span class="p">.</span><span class="nn">Hosting</span><span class="p">.</span><span class="nn">Python</span><span class="p">.</span><span class="nc">CreateModule</span><span class="p">(</span><span class="n">engine</span><span class="p">,</span> <span class="s2">"__main__"</span><span class="p">)</span>
+    <span class="n">scope</span><span class="p">.</span><span class="nc">SetVariable</span><span class="p">(</span><span class="s2">"d"</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
+    <span class="c1">//scope.SetVariable("msg", msg)</span>
+    <span class="n">scope</span><span class="p">.</span><span class="nc">SetVariable</span><span class="p">(</span><span class="s2">"res"</span><span class="p">,</span> <span class="nn">Result</span><span class="p">.</span><span class="nc">Succeeded</span><span class="p">)</span>
+    <span class="n">scope</span><span class="p">.</span><span class="nc">SetVariable</span><span class="p">(</span><span class="s2">"__file__"</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+    <span class="c1">// Script</span>
+    <span class="k">let</span> <span class="n">script</span> <span class="p">=</span> <span class="n">engine</span><span class="p">.</span><span class="nc">CreateScriptSourceFromFile</span><span class="p">(</span><span class="n">path</span> <span class="p">=</span> <span class="n">pth</span><span class="p">,</span> <span class="n">encoding</span> <span class="p">=</span> <span class="nn">System</span><span class="p">.</span><span class="nn">Text</span><span class="p">.</span><span class="nn">Encoding</span><span class="p">.</span><span class="nc">UTF8</span><span class="p">,</span> <span class="n">kind</span> <span class="p">=</span> <span class="nn">Microsoft</span><span class="p">.</span><span class="nn">Scripting</span><span class="p">.</span><span class="nn">SourceCodeKind</span><span class="p">.</span><span class="nc">Statements</span><span class="p">)</span>
+
+    <span class="c1">// Compile</span>
+    <span class="k">let</span> <span class="n">optCompiler</span> <span class="p">=</span> <span class="n">engine</span><span class="p">.</span><span class="nc">GetCompilerOptions</span><span class="p">(</span><span class="n">scope</span><span class="o">):?&gt;</span><span class="nc">PythonCompilerOptions</span>
+    <span class="n">optCompiler</span><span class="p">.</span><span class="nc">ModuleName</span> <span class="p">&lt;-</span> <span class="s2">"__main__"</span>
+    <span class="n">optCompiler</span><span class="p">.</span><span class="nc">Module</span> <span class="p">&lt;-</span> <span class="nn">IronPython</span><span class="p">.</span><span class="nn">Runtime</span><span class="p">.</span><span class="nn">ModuleOptions</span><span class="p">.</span><span class="nc">Initialize</span>
+
+    <span class="c1">// Command</span>
+    <span class="k">let</span> <span class="n">command</span> <span class="p">=</span> <span class="n">script</span><span class="p">.</span><span class="nc">Compile</span><span class="p">(</span><span class="n">optCompiler</span><span class="p">)</span>
+
+    <span class="n">scope</span><span class="p">,</span> <span class="n">script</span><span class="p">,</span> <span class="n">command</span>
+
+<span class="p">[&lt;</span><span class="nc">TransactionAttribute</span><span class="p">(</span><span class="nn">TransactionMode</span><span class="p">.</span><span class="nc">Manual</span><span class="o">)&gt;]</span>
+<span class="k">type</span> <span class="nc">LoadPythonScript</span><span class="bp">()</span> <span class="p">=</span>
+  <span class="k">interface</span> <span class="nc">IExternalCommand</span> <span class="k">with</span> 
+    <span class="k">member</span> <span class="n">x</span><span class="p">.</span><span class="nc">Execute</span><span class="p">(</span><span class="n">cdata</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="n">elset</span><span class="p">)</span> <span class="p">=</span>
+      <span class="k">let</span> <span class="n">pth</span> <span class="p">=</span> <span class="o">@</span><span class="s2">"C:</span><span class="err">\</span><span class="s2">pythonRunByFSharp.py"</span>
+
+      <span class="k">let</span> <span class="n">scope</span><span class="p">,</span> <span class="n">script</span><span class="p">,</span> <span class="n">command</span> <span class="p">=</span> <span class="n">loadPythonScript</span><span class="p">.</span><span class="n">loader</span> <span class="n">cdata</span> <span class="n">pth</span>
+      <span class="k">match</span> <span class="n">command</span> <span class="k">with</span>
+      <span class="p">|</span> <span class="k">null</span> <span class="p">-&gt;</span> <span class="nn">Result</span><span class="p">.</span><span class="nc">Cancelled</span>
+      <span class="p">|</span> <span class="p">_</span> <span class="p">-&gt;</span>
+        <span class="k">try</span>
+          <span class="n">script</span><span class="p">.</span><span class="nc">Execute</span><span class="p">(</span><span class="n">scope</span><span class="p">)</span>
+          <span class="nn">Result</span><span class="p">.</span><span class="nc">Succeeded</span>
+        <span class="k">with</span>
+        <span class="p">|</span> <span class="o">:?</span> <span class="nn">System</span><span class="p">.</span><span class="nc">Exception</span> <span class="k">as</span> <span class="n">exn</span> <span class="p">-&gt;</span>
+          <span class="nn">Result</span><span class="p">.</span><span class="nc">Cancelled</span></code></pre></figure>
+
+<p>Writing til this point, must say, this code is actually simple, and thus quite rough. Using it doesn’t feel as smoothly as the other mature programs like pyRevit or RevitPythonShell. This program just simply loads the Python code through IronPython into Revit. Once we have time, there are many points to be improved, such as importing other Python tools or auto-completion… etc.</p>
+
+<p>寫到這裡，必須要說，這個程式碼還是相當粗糙。使用起來，還是沒有像 pyRevit 或 RevitPythonShell 成熟。這個編碼只是讓我們可簡單地，在 Revit 中，使用 Python 編碼。我們若有時間，在許多方面還是必須要加強（譬如說，引入其它的 Python 工具，或自動完成文字輸入（auto-complete）），使它更加完備。</p>
+
+<p>It has two parts. First one is loading Python code with IronPython (line 5). The other one is our main external command. The reason to split it into two parts is it allows us to re-use the first part in other F# external command just by giving different path towards other Python code files. In the first part, we set up a IronPython engine (line 15), built-in module (line 20) and scope (line 25). Then, output from the first part would be the variables used in the next part – the built scope and C# script, read by IronPython engine, and the command, compiled by the engine. In the next step, be sure that within these three variables, the command is not “null” (line 55), and then use “try… with…” (line 56) from F# to instruct the program how it should response, when any error or exception once happened (line 59).</p>
+
+<p>這個編程分於兩部分：第一部分是用 IronPython 裝載 Python 編碼（行5），而第二是主要的執行外部指令編程。分兩部分的原因，是讓這第一部分的模距，可在其他的外部指令中，只需再鍵入不同的 Python 編碼檔案路徑，被重複利用。在第一部分中，先建立 IronPython 引擎（行15），預設模組（行20）和領域（行25），然後，從此部分輸出的，是在第二部分會使用到的：建立的領域（scope）、IronPython 引擎從 Python 編碼讀取成的 C# 底稿（script）和編譯的 C# 指令（command）。再接下來的步驟中，先確定在此三物件中，編譯的指令不是空集合（行55），在藉由 F# 的 “try… with…” （行56）來確定，倘若在執行底稿時，有錯誤發生時，主要外部指令應該如何反應（行59）。</p>
+
+<p>Below, it is a Python code example. Note, “uiapp” is a pre-set variable, which is connected between the external command through the built-in module in line 21, with the python code. Just save this code under C drive, named as pythonRunByFSharp.py – of course, name and location are freely to decide, however, it must correspond to the setting in line 50.</p>
+
+<p>下面，是一 Python 編碼範例。其中值得注意的是，“uiapp” 是一預設程式變數。此一變數是經由主要執行外部指令編程的第21行，經由 IronPython 預設模組與 Python 編碼連結的。只需將此範例存為一 pythonRunByFSharp.py 於 C 硬碟底下（當然，命名與檔案位置可自由決定，但必須與符合第50行。）在 Revit 中，即可藉由執行外部指令，執行 Python 編碼。</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">Autodesk.Revit.DB</span> <span class="k">as</span> <span class="n">db</span>
+<span class="kn">import</span> <span class="nn">Autodesk.Revit.UI</span> <span class="k">as</span> <span class="n">ui</span>
+<span class="n">uidoc</span> <span class="o">=</span> <span class="n">uiapp</span><span class="p">.</span><span class="n">ActiveUIDocument</span>
+
+<span class="n">idsel</span> <span class="o">=</span> <span class="n">uidoc</span><span class="p">.</span><span class="n">Selection</span><span class="p">.</span><span class="n">GetElementIds</span><span class="p">()</span>
+<span class="n">sel</span> <span class="o">=</span> <span class="p">[</span><span class="n">uidoc</span><span class="p">.</span><span class="n">Document</span><span class="p">.</span><span class="n">GetElement</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="k">for</span> <span class="nb">id</span> <span class="ow">in</span> <span class="n">idsel</span><span class="p">]</span>
+<span class="n">txt</span> <span class="o">=</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">.</span><span class="n">join</span><span class="p">([</span><span class="n">s</span><span class="p">.</span><span class="n">Name</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">sel</span><span class="p">])</span>
+<span class="n">ui</span><span class="p">.</span><span class="n">TaskDialog</span><span class="p">(</span><span class="s">"FSharp runs Python code"</span><span class="p">,</span> <span class="n">txt</span><span class="p">)</span></code></pre></figure>
+
+<p><strong>勿忘參考 / References</strong>：<br />
+Start up an F# solution for Revit plug-in / 在 Visual Studio 中用 F# 編程 Revit 外部指令<br />
+Run external command in Revit / 加入 Revit 外部指令<br />
+Start coding F# library for Revit / 開始編程 Revit 的 F# 指令集</p>]]></content><author><name>Ching</name></author><category term="RevitExternalCommand" /><category term="f#" /><category term="revit api" /><category term="python" /><category term="ironpython" /><summary type="html"><![CDATA[]]></summary></entry></feed>

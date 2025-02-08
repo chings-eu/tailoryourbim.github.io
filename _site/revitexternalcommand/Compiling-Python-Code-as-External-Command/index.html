@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5QTTTRNC1H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5QTTTRNC1H');
+  </script>
+
+  <meta property="og:image" content="https://discordapp.com/assets/ba74954dde74ff40a32ff58069e78c36.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="250">
+  <meta property="og:image:height" content="250">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Compiling Python Code as External Command 裝載 Python 編碼成 Revit 外部程式 | tailor . your . bim</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Compiling Python Code as External Command 裝載 Python 編碼成 Revit 外部程式" />
+<meta name="author" content="Ching" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Got wishes for an improved BIM workflow and environment? Make all your efforts for planing projects, let us tailor your BIM to meet your needs." />
+<meta property="og:description" content="Got wishes for an improved BIM workflow and environment? Make all your efforts for planing projects, let us tailor your BIM to meet your needs." />
+<link rel="canonical" href="http://localhost:4000/revitexternalcommand/Compiling-Python-Code-as-External-Command/" />
+<meta property="og:url" content="http://localhost:4000/revitexternalcommand/Compiling-Python-Code-as-External-Command/" />
+<meta property="og:site_name" content="tailor . your . bim" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-11-10T00:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Compiling Python Code as External Command 裝載 Python 編碼成 Revit 外部程式" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ching"},"dateModified":"2018-11-10T00:00:00+01:00","datePublished":"2018-11-10T00:00:00+01:00","description":"Got wishes for an improved BIM workflow and environment? Make all your efforts for planing projects, let us tailor your BIM to meet your needs.","headline":"Compiling Python Code as External Command 裝載 Python 編碼成 Revit 外部程式","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/revitexternalcommand/Compiling-Python-Code-as-External-Command/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logoty.png"},"name":"Ching"},"url":"http://localhost:4000/revitexternalcommand/Compiling-Python-Code-as-External-Command/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="tailor . your . bim" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><!-- <a class="site-title" rel="author" href="/">tailor . your . bim</a> -->
+
+    <a class="site-title" rel="author" href="/">
+      <img src="/assets/img/logoty.png" alt="Logo" width="28px"> 
+      <span>       </span>
+      <!-- <span style='color: {{ site.colors.t }};'>t</span>ailor . <span style='color: {{ site.colors.y }};'>y</span>our . bim -->
+      <span style='color: #B042FF;'>T</span>
+      <span style='color: #939393;'>ailor . </span>
+      <span style='color: #01bbd4;'>Y</span>
+      <span style='color: #939393;'>our . BIM </span>
+    </a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/contact/">Contact</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Compiling Python Code as External Command | 裝載 Python 編碼成 Revit 外部程式</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-11-10T00:00:00+01:00" itemprop="datePublished">Nov 10, 2018
+      </time></p>
+  </header>
+
+  <div class="post-categories"><a herf="/categories/#RevitExternalCommand">RevitExternalCommand</a>&nbsp;|&nbsp;<a herf="/tags/#f#">f#</a>&nbsp;/&nbsp;<a herf="/tags/#revit api">revit api</a>&nbsp;/&nbsp;<a herf="/tags/#python">python</a>&nbsp;/&nbsp;<a herf="/tags/#ironpython">ironpython</a></div>
+  
+  <div class="post-content e-content" itemprop="articleBody">
+    <script src="/assets/signup/signup.js"></script>
+
+<signup-component></signup-component>
+
+<p>A couple years back, when I started to use Revit and Revit API with my limited Python knowledge from using RhinoCommon for my Master thesis, I’ve got to contact with two very useful external applications – pyRevit and RevitPythonShell. Many thanks to their creators – Ehsan Iran-Nejad and Daren Thomas, respectively, and also thanks to those bloggers (among them – The Building Coder from Jeremy Tammik) who give numerous insights, and uncountable replies on Stack Overflow to those questions of problems which I happened also to encounter, I have since learnt and written many Python codes in my free time and use them daily at work. Furthermore, because of these experiences I can now write the stand-alone external commands and applications for Revit with F#.</p>
+
+<p>幾年前，當我剛開始使用 Revit，用我當時寫論文時，從使用 Python 與 RhinoCommon 的經驗來使用 Revit API 時，我接觸到兩個非常有用的外部程式：pyRevit 和 RevitPythonShell。感謝此兩程式的作者：Ehsan Iran-Nejad 和 Daren Thomas；也感謝那些給予深刻經驗的許多部落格作者（其中，Jeremy Tammik 的 The Building Coder），還有許許多多在 Stack Overflow 的問題解答，而也解答了我在當時有的相關疑惑。從那時起，我學習了許多，也在閒暇之餘寫了很多之後在工作上很有效率的工具。此外，也因為這些經驗，我才能用 F# 寫出許多外部指令與程式。</p>
+
+<p>Recently, I have done a little research,  took these two programs from above as references and wrote a simple Python code loader in F#, which loads a Python script into Revit as an external command, combining with IronPython.</p>
+
+<p>最近，作了一些搜尋，參考此二程式，也用 F# 寫出了一個簡單的 Python 編碼裝載器。此一，裝載了 Python 的編碼，結合 IronPython 以一外部指令進入 Revit 的軟件環境中。</p>
+
+<figure class="highlight"><pre><code class="language-fsharp" data-lang="fsharp"><span class="k">open</span> <span class="nn">IronPython</span><span class="p">.</span><span class="nc">Compiler</span>
+<span class="k">module</span> <span class="n">loadPythonScript</span> <span class="p">=</span>
+  <span class="k">let</span> <span class="n">loader</span><span class="p">(</span><span class="n">cdata</span><span class="p">:</span><span class="nc">ExternalCommandData</span><span class="o">)(</span><span class="n">pth</span><span class="p">:</span><span class="kt">string</span><span class="p">)</span> <span class="p">=</span>
+    <span class="k">let</span> <span class="n">lst</span> <span class="p">=</span> <span class="o">[(</span><span class="s2">"Frames"</span><span class="p">,</span> <span class="bp">true</span><span class="p">:&gt;</span><span class="n">obj</span><span class="o">);</span> <span class="p">(</span><span class="s2">"FullFrames"</span><span class="p">,</span> <span class="bp">true</span><span class="p">:&gt;</span><span class="n">obj</span><span class="o">);</span> <span class="p">(</span><span class="s2">"LightweightScoped"</span><span class="p">,</span> <span class="bp">true</span><span class="p">:&gt;</span><span class="n">obj</span><span class="o">)]</span>
+    <span class="k">let</span> <span class="n">dic</span> <span class="p">=</span> <span class="nn">Seq</span><span class="p">.</span><span class="n">ofList</span> <span class="n">lst</span> <span class="p">|&gt;</span> <span class="n">dict</span>
+
+    <span class="c1">// IronPython Engine</span>
+    <span class="k">let</span> <span class="n">engine</span> <span class="p">=</span> <span class="nn">IronPython</span><span class="p">.</span><span class="nn">Hosting</span><span class="p">.</span><span class="nn">Python</span><span class="p">.</span><span class="nc">CreateEngine</span><span class="p">(</span><span class="n">options</span> <span class="p">=</span> <span class="n">dic</span><span class="p">)</span>
+    <span class="n">engine</span><span class="p">.</span><span class="nn">Runtime</span><span class="p">.</span><span class="nc">LoadAssembly</span><span class="p">(</span><span class="n">typeof</span><span class="p">&lt;</span><span class="nn">Autodesk</span><span class="p">.</span><span class="nn">Revit</span><span class="p">.</span><span class="nn">DB</span><span class="p">.</span><span class="nc">Document</span><span class="o">&gt;.</span><span class="nc">Assembly</span><span class="p">)</span>
+    <span class="n">engine</span><span class="p">.</span><span class="nn">Runtime</span><span class="p">.</span><span class="nc">LoadAssembly</span><span class="p">(</span><span class="n">typeof</span><span class="p">&lt;</span><span class="nn">Autodesk</span><span class="p">.</span><span class="nn">Revit</span><span class="p">.</span><span class="nn">UI</span><span class="p">.</span><span class="nc">Result</span><span class="o">&gt;.</span><span class="nc">Assembly</span><span class="p">)</span>
+
+    <span class="c1">// Builtin Module</span>
+    <span class="k">let</span> <span class="n">mdlBuiltin</span> <span class="p">=</span> <span class="nn">IronPython</span><span class="p">.</span><span class="nn">Hosting</span><span class="p">.</span><span class="nn">Python</span><span class="p">.</span><span class="nc">GetBuiltinModule</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span>
+    <span class="n">mdlBuiltin</span><span class="p">.</span><span class="nc">SetVariable</span><span class="p">(</span><span class="s2">"uiapp"</span><span class="p">,</span> <span class="n">cdata</span><span class="p">.</span><span class="nc">Application</span><span class="p">)</span>
+    <span class="n">mdlBuiltin</span><span class="p">.</span><span class="nc">SetVariable</span><span class="p">(</span><span class="s2">"__window__"</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+    <span class="c1">// Scope</span>
+    <span class="k">let</span> <span class="n">scope</span> <span class="p">=</span> <span class="nn">IronPython</span><span class="p">.</span><span class="nn">Hosting</span><span class="p">.</span><span class="nn">Python</span><span class="p">.</span><span class="nc">CreateModule</span><span class="p">(</span><span class="n">engine</span><span class="p">,</span> <span class="s2">"__main__"</span><span class="p">)</span>
+    <span class="n">scope</span><span class="p">.</span><span class="nc">SetVariable</span><span class="p">(</span><span class="s2">"d"</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
+    <span class="c1">//scope.SetVariable("msg", msg)</span>
+    <span class="n">scope</span><span class="p">.</span><span class="nc">SetVariable</span><span class="p">(</span><span class="s2">"res"</span><span class="p">,</span> <span class="nn">Result</span><span class="p">.</span><span class="nc">Succeeded</span><span class="p">)</span>
+    <span class="n">scope</span><span class="p">.</span><span class="nc">SetVariable</span><span class="p">(</span><span class="s2">"__file__"</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+    <span class="c1">// Script</span>
+    <span class="k">let</span> <span class="n">script</span> <span class="p">=</span> <span class="n">engine</span><span class="p">.</span><span class="nc">CreateScriptSourceFromFile</span><span class="p">(</span><span class="n">path</span> <span class="p">=</span> <span class="n">pth</span><span class="p">,</span> <span class="n">encoding</span> <span class="p">=</span> <span class="nn">System</span><span class="p">.</span><span class="nn">Text</span><span class="p">.</span><span class="nn">Encoding</span><span class="p">.</span><span class="nc">UTF8</span><span class="p">,</span> <span class="n">kind</span> <span class="p">=</span> <span class="nn">Microsoft</span><span class="p">.</span><span class="nn">Scripting</span><span class="p">.</span><span class="nn">SourceCodeKind</span><span class="p">.</span><span class="nc">Statements</span><span class="p">)</span>
+
+    <span class="c1">// Compile</span>
+    <span class="k">let</span> <span class="n">optCompiler</span> <span class="p">=</span> <span class="n">engine</span><span class="p">.</span><span class="nc">GetCompilerOptions</span><span class="p">(</span><span class="n">scope</span><span class="o">):?&gt;</span><span class="nc">PythonCompilerOptions</span>
+    <span class="n">optCompiler</span><span class="p">.</span><span class="nc">ModuleName</span> <span class="p">&lt;-</span> <span class="s2">"__main__"</span>
+    <span class="n">optCompiler</span><span class="p">.</span><span class="nc">Module</span> <span class="p">&lt;-</span> <span class="nn">IronPython</span><span class="p">.</span><span class="nn">Runtime</span><span class="p">.</span><span class="nn">ModuleOptions</span><span class="p">.</span><span class="nc">Initialize</span>
+
+    <span class="c1">// Command</span>
+    <span class="k">let</span> <span class="n">command</span> <span class="p">=</span> <span class="n">script</span><span class="p">.</span><span class="nc">Compile</span><span class="p">(</span><span class="n">optCompiler</span><span class="p">)</span>
+
+    <span class="n">scope</span><span class="p">,</span> <span class="n">script</span><span class="p">,</span> <span class="n">command</span>
+
+<span class="p">[&lt;</span><span class="nc">TransactionAttribute</span><span class="p">(</span><span class="nn">TransactionMode</span><span class="p">.</span><span class="nc">Manual</span><span class="o">)&gt;]</span>
+<span class="k">type</span> <span class="nc">LoadPythonScript</span><span class="bp">()</span> <span class="p">=</span>
+  <span class="k">interface</span> <span class="nc">IExternalCommand</span> <span class="k">with</span> 
+    <span class="k">member</span> <span class="n">x</span><span class="p">.</span><span class="nc">Execute</span><span class="p">(</span><span class="n">cdata</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="n">elset</span><span class="p">)</span> <span class="p">=</span>
+      <span class="k">let</span> <span class="n">pth</span> <span class="p">=</span> <span class="o">@</span><span class="s2">"C:</span><span class="err">\</span><span class="s2">pythonRunByFSharp.py"</span>
+
+      <span class="k">let</span> <span class="n">scope</span><span class="p">,</span> <span class="n">script</span><span class="p">,</span> <span class="n">command</span> <span class="p">=</span> <span class="n">loadPythonScript</span><span class="p">.</span><span class="n">loader</span> <span class="n">cdata</span> <span class="n">pth</span>
+      <span class="k">match</span> <span class="n">command</span> <span class="k">with</span>
+      <span class="p">|</span> <span class="k">null</span> <span class="p">-&gt;</span> <span class="nn">Result</span><span class="p">.</span><span class="nc">Cancelled</span>
+      <span class="p">|</span> <span class="p">_</span> <span class="p">-&gt;</span>
+        <span class="k">try</span>
+          <span class="n">script</span><span class="p">.</span><span class="nc">Execute</span><span class="p">(</span><span class="n">scope</span><span class="p">)</span>
+          <span class="nn">Result</span><span class="p">.</span><span class="nc">Succeeded</span>
+        <span class="k">with</span>
+        <span class="p">|</span> <span class="o">:?</span> <span class="nn">System</span><span class="p">.</span><span class="nc">Exception</span> <span class="k">as</span> <span class="n">exn</span> <span class="p">-&gt;</span>
+          <span class="nn">Result</span><span class="p">.</span><span class="nc">Cancelled</span></code></pre></figure>
+
+<p>Writing til this point, must say, this code is actually simple, and thus quite rough. Using it doesn’t feel as smoothly as the other mature programs like pyRevit or RevitPythonShell. This program just simply loads the Python code through IronPython into Revit. Once we have time, there are many points to be improved, such as importing other Python tools or auto-completion… etc.</p>
+
+<p>寫到這裡，必須要說，這個程式碼還是相當粗糙。使用起來，還是沒有像 pyRevit 或 RevitPythonShell 成熟。這個編碼只是讓我們可簡單地，在 Revit 中，使用 Python 編碼。我們若有時間，在許多方面還是必須要加強（譬如說，引入其它的 Python 工具，或自動完成文字輸入（auto-complete）），使它更加完備。</p>
+
+<p>It has two parts. First one is loading Python code with IronPython (line 5). The other one is our main external command. The reason to split it into two parts is it allows us to re-use the first part in other F# external command just by giving different path towards other Python code files. In the first part, we set up a IronPython engine (line 15), built-in module (line 20) and scope (line 25). Then, output from the first part would be the variables used in the next part – the built scope and C# script, read by IronPython engine, and the command, compiled by the engine. In the next step, be sure that within these three variables, the command is not “null” (line 55), and then use “try… with…” (line 56) from F# to instruct the program how it should response, when any error or exception once happened (line 59).</p>
+
+<p>這個編程分於兩部分：第一部分是用 IronPython 裝載 Python 編碼（行5），而第二是主要的執行外部指令編程。分兩部分的原因，是讓這第一部分的模距，可在其他的外部指令中，只需再鍵入不同的 Python 編碼檔案路徑，被重複利用。在第一部分中，先建立 IronPython 引擎（行15），預設模組（行20）和領域（行25），然後，從此部分輸出的，是在第二部分會使用到的：建立的領域（scope）、IronPython 引擎從 Python 編碼讀取成的 C# 底稿（script）和編譯的 C# 指令（command）。再接下來的步驟中，先確定在此三物件中，編譯的指令不是空集合（行55），在藉由 F# 的 “try… with…” （行56）來確定，倘若在執行底稿時，有錯誤發生時，主要外部指令應該如何反應（行59）。</p>
+
+<p>Below, it is a Python code example. Note, “uiapp” is a pre-set variable, which is connected between the external command through the built-in module in line 21, with the python code. Just save this code under C drive, named as pythonRunByFSharp.py – of course, name and location are freely to decide, however, it must correspond to the setting in line 50.</p>
+
+<p>下面，是一 Python 編碼範例。其中值得注意的是，“uiapp” 是一預設程式變數。此一變數是經由主要執行外部指令編程的第21行，經由 IronPython 預設模組與 Python 編碼連結的。只需將此範例存為一 pythonRunByFSharp.py 於 C 硬碟底下（當然，命名與檔案位置可自由決定，但必須與符合第50行。）在 Revit 中，即可藉由執行外部指令，執行 Python 編碼。</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">Autodesk.Revit.DB</span> <span class="k">as</span> <span class="n">db</span>
+<span class="kn">import</span> <span class="nn">Autodesk.Revit.UI</span> <span class="k">as</span> <span class="n">ui</span>
+<span class="n">uidoc</span> <span class="o">=</span> <span class="n">uiapp</span><span class="p">.</span><span class="n">ActiveUIDocument</span>
+
+<span class="n">idsel</span> <span class="o">=</span> <span class="n">uidoc</span><span class="p">.</span><span class="n">Selection</span><span class="p">.</span><span class="n">GetElementIds</span><span class="p">()</span>
+<span class="n">sel</span> <span class="o">=</span> <span class="p">[</span><span class="n">uidoc</span><span class="p">.</span><span class="n">Document</span><span class="p">.</span><span class="n">GetElement</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="k">for</span> <span class="nb">id</span> <span class="ow">in</span> <span class="n">idsel</span><span class="p">]</span>
+<span class="n">txt</span> <span class="o">=</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">.</span><span class="n">join</span><span class="p">([</span><span class="n">s</span><span class="p">.</span><span class="n">Name</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">sel</span><span class="p">])</span>
+<span class="n">ui</span><span class="p">.</span><span class="n">TaskDialog</span><span class="p">(</span><span class="s">"FSharp runs Python code"</span><span class="p">,</span> <span class="n">txt</span><span class="p">)</span></code></pre></figure>
+
+<p><strong>勿忘參考 / References</strong>：<br />
+Start up an F# solution for Revit plug-in / 在 Visual Studio 中用 F# 編程 Revit 外部指令<br />
+Run external command in Revit / 加入 Revit 外部指令<br />
+Start coding F# library for Revit / 開始編程 Revit 的 F# 指令集</p>
+
+  </div><a class="u-url" href="/revitexternalcommand/Compiling-Python-Code-as-External-Command/" hidden></a>
+</article>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="chings" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting!" data-color="#8564a2" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">tailor . your . bim</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>© 2025 Chings e.U.</li>
+          <li class="p-name">Ching</li><li><a class="u-email" href="mailto:info@tailoryourbim.com">info@tailoryourbim.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/chings-eu"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">chings-eu</span></a></li><li><a href="https://www.linkedin.com/in/tailoryourbim"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">tailoryourbim</span></a></li><li><a href="https://www.twitter.com/tailoryourbim"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">tailoryourbim</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Got wishes for an improved BIM workflow and environment? Make all your efforts for planing projects, let us tailor your BIM to meet your needs.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="chings" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting!" data-color="#8564a2" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+</html>

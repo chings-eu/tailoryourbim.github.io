@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5QTTTRNC1H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5QTTTRNC1H');
+  </script>
+
+  <meta property="og:image" content="https://discordapp.com/assets/ba74954dde74ff40a32ff58069e78c36.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="250">
+  <meta property="og:image:height" content="250">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Compile F# Codes Without Restarting Revit | tailor . your . bim</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Compile F# Codes Without Restarting Revit" />
+<meta name="author" content="Ching" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Visual Studio Community is a great tool, when coding your own Revit add-in command. While typing, you have its IntelliSense helping you by suggesting your next move, so that you will not get lost in the API library jungle. Especially the one from Revit. However, you’ve always got have to re-compile your whole dynamic linked library from the whole solution, and it took you an huge amount of time for waiting Revit to re-start and re-load your extremely heavy model, even if you’ve just changed a tiny bit of code for debugging. Even if just for one letter. Nevertheless, in this case you have to have all your codes - not only the one you’re debugging now - compiling-ready to prevent any error emerging while building it. But sometimes you’ll have a few other unfinished codes, and you want to just test this current one really quickly to see if it works or how a certain section of it works." />
+<meta property="og:description" content="Visual Studio Community is a great tool, when coding your own Revit add-in command. While typing, you have its IntelliSense helping you by suggesting your next move, so that you will not get lost in the API library jungle. Especially the one from Revit. However, you’ve always got have to re-compile your whole dynamic linked library from the whole solution, and it took you an huge amount of time for waiting Revit to re-start and re-load your extremely heavy model, even if you’ve just changed a tiny bit of code for debugging. Even if just for one letter. Nevertheless, in this case you have to have all your codes - not only the one you’re debugging now - compiling-ready to prevent any error emerging while building it. But sometimes you’ll have a few other unfinished codes, and you want to just test this current one really quickly to see if it works or how a certain section of it works." />
+<link rel="canonical" href="http://localhost:4000/revitexternalcommand/compile-f-codes-without-restarting-revit/" />
+<meta property="og:url" content="http://localhost:4000/revitexternalcommand/compile-f-codes-without-restarting-revit/" />
+<meta property="og:site_name" content="tailor . your . bim" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-03T00:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Compile F# Codes Without Restarting Revit" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ching"},"dateModified":"2022-09-03T00:00:00+02:00","datePublished":"2022-09-03T00:00:00+02:00","description":"Visual Studio Community is a great tool, when coding your own Revit add-in command. While typing, you have its IntelliSense helping you by suggesting your next move, so that you will not get lost in the API library jungle. Especially the one from Revit. However, you’ve always got have to re-compile your whole dynamic linked library from the whole solution, and it took you an huge amount of time for waiting Revit to re-start and re-load your extremely heavy model, even if you’ve just changed a tiny bit of code for debugging. Even if just for one letter. Nevertheless, in this case you have to have all your codes - not only the one you’re debugging now - compiling-ready to prevent any error emerging while building it. But sometimes you’ll have a few other unfinished codes, and you want to just test this current one really quickly to see if it works or how a certain section of it works.","headline":"Compile F# Codes Without Restarting Revit","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/revitexternalcommand/compile-f-codes-without-restarting-revit/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logoty.png"},"name":"Ching"},"url":"http://localhost:4000/revitexternalcommand/compile-f-codes-without-restarting-revit/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="tailor . your . bim" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><!-- <a class="site-title" rel="author" href="/">tailor . your . bim</a> -->
+
+    <a class="site-title" rel="author" href="/">
+      <img src="/assets/img/logoty.png" alt="Logo" width="28px"> 
+      <span>       </span>
+      <!-- <span style='color: {{ site.colors.t }};'>t</span>ailor . <span style='color: {{ site.colors.y }};'>y</span>our . bim -->
+      <span style='color: #B042FF;'>T</span>
+      <span style='color: #939393;'>ailor . </span>
+      <span style='color: #01bbd4;'>Y</span>
+      <span style='color: #939393;'>our . BIM </span>
+    </a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/contact/">Contact</a><a class="page-link" href="/tags/">Tags</a></div>
+      </nav></div>
+</header>
+
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Compile F# Codes Without Restarting Revit</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2022-09-03T00:00:00+02:00" itemprop="datePublished">Sep 3, 2022
+      </time></p>
+  </header>
+
+  <div class="post-categories"><a herf="/categories/#RevitExternalCommand">RevitExternalCommand</a>&nbsp;|&nbsp;<a herf="/tags/#tailor-your-revit">tailor-your-revit</a></div>
+  
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><strong>Visual Studio Community</strong> is a great tool, when coding your own <u>Revit add-in</u> command. While typing, you have its <u>IntelliSense</u> helping you by suggesting your next move, so that you will not get lost in the API library jungle. Especially the one from Revit. However, you’ve always got have to re-compile your whole <em>dynamic linked library</em> from the whole solution, and it took you an huge amount of time for waiting Revit to re-start and re-load your extremely heavy model, even if you’ve just changed a tiny bit of code for debugging. Even if just for one letter. Nevertheless, in this case you have to have all your codes - not only the one you’re debugging now - compiling-ready to prevent any error emerging while building it. But sometimes you’ll have a few other unfinished codes, and you want to just test this current one really quickly to see if it works or how a certain section of it works.</p>
+
+<p>I found this in-efficient issue hugely annoying right at beginning of my coding experience for Revit. Since then, I have been working on developing an <u>efficient</u>, <u>dynamic</u> <strong>coding environment</strong> along with an <strong>instant</strong> <u>F#-code-compiler</u>. After daily testing and repeated improvement, I’d like to share with the public: the <strong>Tailor-your-Revit core (tyRCore)</strong>.</p>
+
+<script src="/assets/signup/signup.js"></script>
+
+<signup-component></signup-component>
+
+<h1 id="coding-environment"><em>Coding <strong>Environment</strong></em></h1>
+<p>As mentioned, the advantage that we <u>definitely</u> should take from Visual Studio Community is its IntelliSense, and this is the reason that this compiler should be built upon with a <u>matching</u> solution folder structure. Here are the steps for setting up your <em>efficient, dynamic and instant</em> coding environment to your Revit:</p>
+
+<ul>
+  <li>
+    <p><em>Download and install <strong>Visual Studio Community</strong></em><br />
+This is quite straight forward - just go to this <a href="https://visualstudio.microsoft.com/">page</a> for Visual Studio and get the <strong>community</strong> version, for Windows or Mac, and install it with those <u>packages</u>, relevant to developing F# desktop programs.</p>
+  </li>
+  <li>
+    <p><em>Create an <strong>F# solution</strong></em><br />
+Follow the <a href="../Start-Up-an-FSharp-Solution-for-Revit-Plug-In">other post</a> for a step-by-step tutorial to set up an F# solution. For working with <strong>tyRCore</strong>, you just need additionally set up a folder collecting your codes with a <u>strucutre</u> as mentioned <a href="#structure">below</a>, or directly fork me on <a href="https://github.com/chings-eu/Using_tyRCore">GitHub</a> to get a template with all the needed setups for Visual Studio solution to work with tyRCore. Without further setup, this repository can be immediately loaded into Revit through <em>tyRCore</em> add-in.</p>
+  </li>
+  <li>
+    <p><em>Download and install <strong>tyRCode</strong></em><br />
+Download tyRCore for Revit 2024 <a href="../../downloads/tyR24Core_v1.0.exe">here</a>. The installation is straight forward. However, if you’re not sure if you’d do it right, just follow the <em><strong>README</strong></em> section in this <a href="https://github.com/chings-eu/Using_tyRCore">repository</a> from above.</p>
+  </li>
+</ul>
+
+<h1 id="loading-codes"><em><strong>Loading</strong> Codes</em></h1>
+<p>This is a <u>trial version</u> of <strong>tyRCore</strong> with simple interface layouts and automatic toolbar setups in the Revit environment. However, regardless of its work-in-progress, it’s a version which serves the basic needs, as I work with it everyday in Revit and it saved me huge amount of time from inefficient restarts while debugging, and I could then produce a lot more within a narrow time frame.</p>
+
+<p>After installing tyRCore into Revit, you’ll find these <u>two new features</u> added onto the tool ribbon:</p>
+
+<ul>
+  <li>A new <em>PushButton</em> <strong>Load F# Codes</strong> in the external tools from <em>Add-ins</em> tab, and</li>
+</ul>
+<p align="center">
+    <img src="/assets/img/2022/220829_01_Button in Add-Ins Tab.png" style="width:80%;" />
+</p>
+
+<ul>
+  <li>A new <em>RibbonTab</em> named <strong>tyR Core</strong> on the ribbon.</li>
+</ul>
+<p align="center">
+    <img src="/assets/img/2022/220829_02_Button in tyR Tab.png" style="width:80%;" />
+</p>
+
+<h1 id="structure"><em><strong>Structure</strong></em></h1>
+<p>Both of these two buttons are calling the same command (i.e. same source code) and have the loading <em>PushButton</em> “Load Your FSharp Codes”. With a click on either of them, you’ll be asked to pick the folder with your F# codes and load them into Revit ribbon, according to your folder structure. The difference between the two buttons is just that, you can only call this command without an open document, if it’s registered standalone as an external command. For demonstration purpose, I’ll just take our pre-set F# solution <u>Using_tyRCore</u> as an example:</p>
+
+<ul>
+  <li>The name of the upper directory <em>Using_tyRCore</em> from your choosen folder <strong>cmd</strong> will be the name of the <em><u>ribbon tab</u></em> (It’s also the name of your project in Visual studio.)</li>
+  <li>The names of <strong>sub-folders</strong> will be mapped with formats, either <em>RibbonPanel</em> or <em>RibbonPanel.PullDownButton</em>. (e.g. <u>modify</u> or <u>modify.parameter</u>)</li>
+  <li>In the sub-folders, you saved your F# source codes, and each of them will be connect to a <em>PushButton</em> and put under a <em>RibbonPanel</em> or within a <em>PullDownButton</em> respectively.</li>
+</ul>
+
+<p>By the way, <strong>tyRCore</strong> will also load automatically all those source codes, which are located in the folders, whose names starting with <u>"standalone"</u>, additionally as standalone external commands, which can be found in the “Add-Ins” tab, “External” panel. They can be executed without opening any Revit documents at first. This comes in handy, if you code some commands which should run <em>“formlessly”</em>.</p>
+
+<h1 id="furthermore"><em><strong>Furthermore</strong></em></h1>
+<p>This was an introduction to the tyRCore, a great starting point for you to build a comprehensive, structured <u>Revit external commands library</u> step-by-step for your own workflow. I’ll cover more about, how to put it into action, later on, and you’ll see how this will change your experience with <strong>coding in BIM</strong>!</p>
+
+<p>I’ll be grateful to receive some feedbacks via <a href="mailto:info@tailoryourbim.com">e-mail</a> from you to improve <strong>tyRCore</strong>!<br />
+And if you like it, buy me a coffee by following a click on the coffee cup on the right-hand side corner of this page.</p>
+
+<p>Until next time, dig in and have fun!</p>
+
+
+  </div><a class="u-url" href="/revitexternalcommand/compile-f-codes-without-restarting-revit/" hidden></a>
+</article>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="chings" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting!" data-color="#8564a2" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">tailor . your . bim</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>© 2025 Chings e.U.</li>
+          <li class="p-name">Ching</li><li><a class="u-email" href="mailto:info@tailoryourbim.com">info@tailoryourbim.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/chings-eu"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">chings-eu</span></a></li><li><a href="https://www.linkedin.com/in/tailoryourbim"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">tailoryourbim</span></a></li><li><a href="https://www.twitter.com/tailoryourbim"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">tailoryourbim</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Got wishes for an improved BIM workflow and environment? Make all your efforts for planing projects, let us tailor your BIM to meet your needs.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="chings" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting!" data-color="#8564a2" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+</html>
