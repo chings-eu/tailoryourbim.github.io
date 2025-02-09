@@ -18,7 +18,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Synchronize Section Box | tailor . your . bim</title>
+<title>Synchronize Section Box | Tailor Your BIM</title>
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="Synchronize Section Box" />
 <meta name="author" content="Ching" />
@@ -27,7 +27,7 @@
 <meta property="og:description" content="Here to download the compiled Dynamic-Linked Library(.dll) When modeling in Revit, we set up a 3D view properly for our reviewing of the collisions in models to be easily recognizable and efficiently modified, and we would like to jump from one issue to the next quickly, we save the settings in the view template for the similar reviewing attentions. However, the display of the model can easily be saved in template, but the location of the issues can be shown by modifying the section box in the 3d view. by hand. This can be extremely inefficient when dealing with multiple issues with scattered locations. For example, according to my experience, especially when working on the BCFs (Building Collaboration Format). When opening a issue, you will get a default 3d view opened, and the objects that might have collision are shown in the scene. However, the display of this default window might not be the one you want, especially when many overlapping objects are in the scene, you might wish you have your own view open, where you have setup the display. If you are going to open your own view, every time you open one issue, and then fit the section box in your own view to the one from the BCF, it will be already dark outside your window, since each time the model has been checked, there might be hundreds of new issues coming, and you will be wasting too much time on just adjusting the views. I don’t know if there is any tool for synchronizing section boxes between more than two views out there or already in the new version of Revit. But with F# and Revit API we can have the opened 3d views synchronized with current active view. type SyncSectionBox() as this = interface IExternalCommand with member x.Execute(cdata, msg, elset) = let uidoc = cdata.Application.ActiveUIDocument let vAct = uidoc.ActiveView let bbxAct = (vAct:?&gt;View3D).GetSectionBox() let uiv3ds = uidoc.GetOpenUIViews() |&gt; Seq.filter(fun uiv -&gt; uiv.ViewId &lt;&gt; vAct.Id) |&gt; Seq.filter( fun uiv -&gt; let view = uiv.ViewId |&gt; uidoc.Document.GetElement match view with | :? View3D -&gt; true | _ -&gt; false ) |&gt; List.ofSeq match uiv3ds with | [] -&gt; msg &lt;- &quot;No other opened 3d view to sync.&quot; Result.Cancelled | _ -&gt; let t = new Transaction(uidoc.Document, string this) t.Start() |&gt; ignore uiv3ds |&gt; Seq.iter( fun uiv -&gt; let view = uiv.ViewId |&gt; uidoc.Document.GetElement (view:?&gt;View3D).SetSectionBox(bbxAct) uiv.ZoomToFit() ) t.Commit() |&gt; ignore Result.Succeeded It is just a short code, but, I think, it can help shortening our time for finding the right view when jumping from spot to spot. The concept is simple: just a manipulation of section boxes in 3d views. First, find the section box of the current 3d view (line 11). Section boxes are in a bounding boxes, which is a rectangular box and has its maximum and minimum points. Second, find the opened UI-views (line 13) which we want to apply this section box into. At this step, we filter out first the active view, since we don’t have to synchronize its section box with itself, and then we filter again and get rid of those views which are not 3d (line 15). Then it’s the main body of the command. We match the list of opened UI-views, which are filtered. If it is empty, then there is nothing to sync, and we response with message to tell user to open other 3d views. Else, we open a transaction to be ready to apply section box to views (line 27), since we are going to modify the model information. The rest is one iteration of the 3d view list – for each of the view we use the SetSectionBox method to apply the section box to it. However we have to note that the downcast of the view as an element to view is necessary (line 33), just like how we get the section box at first (line 11), otherwise these two methods will not be available. The final step is just for a convenient modeling work-flow, to zoom the UI-view, with the new section box, to fit the screen, or we might see nothing after the view manipulation, since the next spot could be far away. Stay tuned!" />
 <link rel="canonical" href="http://localhost:4000/revitexternalcommand/Synchronize-Section-Box/" />
 <meta property="og:url" content="http://localhost:4000/revitexternalcommand/Synchronize-Section-Box/" />
-<meta property="og:site_name" content="tailor . your . bim" />
+<meta property="og:site_name" content="Tailor Your BIM" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-10-08T00:00:00+02:00" />
 <meta name="twitter:card" content="summary" />
@@ -36,14 +36,14 @@
 {"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ching"},"dateModified":"2018-10-08T00:00:00+02:00","datePublished":"2018-10-08T00:00:00+02:00","description":"Here to download the compiled Dynamic-Linked Library(.dll) When modeling in Revit, we set up a 3D view properly for our reviewing of the collisions in models to be easily recognizable and efficiently modified, and we would like to jump from one issue to the next quickly, we save the settings in the view template for the similar reviewing attentions. However, the display of the model can easily be saved in template, but the location of the issues can be shown by modifying the section box in the 3d view. by hand. This can be extremely inefficient when dealing with multiple issues with scattered locations. For example, according to my experience, especially when working on the BCFs (Building Collaboration Format). When opening a issue, you will get a default 3d view opened, and the objects that might have collision are shown in the scene. However, the display of this default window might not be the one you want, especially when many overlapping objects are in the scene, you might wish you have your own view open, where you have setup the display. If you are going to open your own view, every time you open one issue, and then fit the section box in your own view to the one from the BCF, it will be already dark outside your window, since each time the model has been checked, there might be hundreds of new issues coming, and you will be wasting too much time on just adjusting the views. I don’t know if there is any tool for synchronizing section boxes between more than two views out there or already in the new version of Revit. But with F# and Revit API we can have the opened 3d views synchronized with current active view. type SyncSectionBox() as this = interface IExternalCommand with member x.Execute(cdata, msg, elset) = let uidoc = cdata.Application.ActiveUIDocument let vAct = uidoc.ActiveView let bbxAct = (vAct:?&gt;View3D).GetSectionBox() let uiv3ds = uidoc.GetOpenUIViews() |&gt; Seq.filter(fun uiv -&gt; uiv.ViewId &lt;&gt; vAct.Id) |&gt; Seq.filter( fun uiv -&gt; let view = uiv.ViewId |&gt; uidoc.Document.GetElement match view with | :? View3D -&gt; true | _ -&gt; false ) |&gt; List.ofSeq match uiv3ds with | [] -&gt; msg &lt;- &quot;No other opened 3d view to sync.&quot; Result.Cancelled | _ -&gt; let t = new Transaction(uidoc.Document, string this) t.Start() |&gt; ignore uiv3ds |&gt; Seq.iter( fun uiv -&gt; let view = uiv.ViewId |&gt; uidoc.Document.GetElement (view:?&gt;View3D).SetSectionBox(bbxAct) uiv.ZoomToFit() ) t.Commit() |&gt; ignore Result.Succeeded It is just a short code, but, I think, it can help shortening our time for finding the right view when jumping from spot to spot. The concept is simple: just a manipulation of section boxes in 3d views. First, find the section box of the current 3d view (line 11). Section boxes are in a bounding boxes, which is a rectangular box and has its maximum and minimum points. Second, find the opened UI-views (line 13) which we want to apply this section box into. At this step, we filter out first the active view, since we don’t have to synchronize its section box with itself, and then we filter again and get rid of those views which are not 3d (line 15). Then it’s the main body of the command. We match the list of opened UI-views, which are filtered. If it is empty, then there is nothing to sync, and we response with message to tell user to open other 3d views. Else, we open a transaction to be ready to apply section box to views (line 27), since we are going to modify the model information. The rest is one iteration of the 3d view list – for each of the view we use the SetSectionBox method to apply the section box to it. However we have to note that the downcast of the view as an element to view is necessary (line 33), just like how we get the section box at first (line 11), otherwise these two methods will not be available. The final step is just for a convenient modeling work-flow, to zoom the UI-view, with the new section box, to fit the screen, or we might see nothing after the view manipulation, since the next spot could be far away. Stay tuned!","headline":"Synchronize Section Box","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/revitexternalcommand/Synchronize-Section-Box/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logoty.png"},"name":"Ching"},"url":"http://localhost:4000/revitexternalcommand/Synchronize-Section-Box/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
-  <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="tailor . your . bim" /></head>
+  <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Tailor Your BIM" /></head>
 <body><header class="site-header" role="banner">
 
-  <div class="wrapper"><!-- <a class="site-title" rel="author" href="/">tailor . your . bim</a> -->
+  <div class="wrapper"><!-- <a class="site-title" rel="author" href="/">Tailor Your BIM</a> -->
 
     <a class="site-title" rel="author" href="/">
-      <img src="/assets/img/logoty.png" alt="Logo" width="28px"> 
-      <span>&nbsp;&nbsp;tailor . your . bim</span>
+      <img src="/assets/img/logoty.png" alt="Logo" width="48px"> 
+      <!-- <span>&nbsp;&nbsp;Tailor Your BIM</span> -->
         
       
       <!-- <span style='color: #B042FF;'>T</span>
@@ -139,12 +139,16 @@
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">
-
-    <h2 class="footer-heading">tailor . your . bim</h2>
-
+    <p>
+       <!-- <h2>Tailor Your BIM</h2> -->
+      <!-- <h2 class="footer-heading">Tailor Your BIM</h2> -->
+      <img src="/assets/img/logoty.png" alt="Logo" width="42px">
+    </p>
+    
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
+          
           <li>© 2025 Chings e.U.</li>
           <li class="p-name">Ching</li><li><a class="u-email" href="mailto:info@tailoryourbim.com">info@tailoryourbim.com</a></li></ul>
       </div>
@@ -153,7 +157,7 @@
 </div>
 
       <div class="footer-col footer-col-3">
-        <p>I&#39;m Ching, your BIM tailor.</p>
+        <p>Ching&#39;s here, your tailor for BIM.</p>
       </div>
     </div>
 

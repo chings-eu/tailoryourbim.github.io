@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: tailor . your . bim 
+title: Tailor Your BIM
 title_html: "<span style='color: {{ site.colors.t }};'>t</span>ailor . <span style='color: {{ site.colors.y }};'>y</span>our . bim"
 company: © 2025 Chings e.U.
 companyurl: "http://chings.eu"
@@ -23,7 +23,7 @@ favicon: /assets/img/favicon.png
 email: info@tailoryourbim.com
 author: Ching
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm Ching, your tailor for BIM.
+  Ching's here, your tailor for BIM.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://tailoryourbim.com" # the base hostname & protocol for your site, e.g. http://example.com
